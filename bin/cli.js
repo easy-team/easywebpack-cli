@@ -16,6 +16,9 @@ program
 
 const baseDir = process.cwd();
 const config = require(path.join(baseDir, program.filename || 'webpack.config.js'));
+if(program.build){
+  console.log('>>>>>build',program.build);
+}
 const builder = require('../lib/builder');
 if (program.server) {
   builder.server(config);
