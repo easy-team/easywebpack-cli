@@ -1,11 +1,13 @@
 {
   "name": "easywebpack-cli",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "",
   "bin": {
     "easywebpack": "bin/cli.js"
   },
-  "scripts": {},
+  "scripts": {
+    "postinstall": "node lib/install.js"
+  },
   "dependencies": {
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
