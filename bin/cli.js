@@ -1,11 +1,8 @@
 #!/usr/bin/env node
-
-const path = require('path');
-const assert = require('assert');
+'use strict';
 const program = require('commander');
 const chalk = require('chalk');
 const _ = require('lodash.get');
-const inquirer = require('inquirer');
 const utils = require('../lib/utils');
 const builder = require('../lib/builder');
 const command = require('../lib/command');
@@ -13,8 +10,6 @@ const baseDir = process.cwd();
 
 program
   .version('1.0.0')
-
-  // .option('-i, --init', 'init framework [vue/react/weex] boilerplate')
   .option('-f, --filename [path]', 'webpack config file name')
   .option('-w, --watch', 'webpack watch and hot-update')
   .option('-m, --hash', 'webpack md5 hash js/css/image')
@@ -24,16 +19,18 @@ program
 
 program
   .command('init')
-  .description('init webpack config or boilerplate')
-  .action(() => {
-    command.init();
+  .option('-r, --registry [url]', 'npm registry, default https://registry.npmjs.org, you can taobao registry: https://registry.npm.taobao.org')
+  .description('init webpack config or boilerplate for Vue/React/Weex')
+  .action(options => {
+    command.init(options);
   });
 
 program
   .command('install')
+  .option('-r, --registry [url]', 'npm registry, default https://registry.npmjs.org, you can taobao registry: https://registry.npm.taobao.org')
   .description('npm install')
-  .action(() => {
-    builder.install();
+  .action(options => {
+    builder.install(options);
   });
 
 program

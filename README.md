@@ -1,19 +1,32 @@
 # easywebpack-cli
 
-Webpack Building Command Line Tool for [easywebpack](https://github.com/hubcarl/easywebpack-cli.git), Global Command `easywebpack`
+Webpack Building Command Line And Boilerplate Init Tool for [easywebpack](https://github.com/hubcarl/easywebpack-cli.git).
 
-`easywebpack` 命令默认会读取项目根目录 `webpack.config.js` 配置(见底部举例), 然后根据 `framework` 字段自动根据映射到构建解决方案.
- 目前支持 `vue` ([easywebpack-vue](https://github.com/hubcarl/easywebpack-vue.git)) 和 `weex` ([easywebpack-weex](https://github.com/hubcarl/easywebpack-weex.git))解决方案.
+Global Command `easywebpack` or `easy`,  目前支持如下三种构建:
+
+- `vue` ([easywebpack-vue](https://github.com/hubcarl/easywebpack-vue.git) 
+- `react` ([easywebpack-react](https://github.com/hubcarl/easywebpack-react.git)
+- `weex` ([easywebpack-weex](https://github.com/hubcarl/easywebpack-weex.git)
+
+其中 `Vue` 和 `React` 支持客户端运行模式构建和服务端模式构建, `Weex` 支持Native模式和Web模式构建.
+
+## 一.特性
+
+- 支持`Vue`,`React`, `Weex` Webpack 编译和Server功能
+- 支持`Vue`,`React`, `Weex` easywepback-cli 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
+- 支持`Vue`,`React`, `Weex` webpack config build 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
+- 支持`Vue`,`React`, `Weex` client render boilerplate 项目初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
+- 支持`Vue`,`React` server side boilerplate 项目初始化[egg-vue-webpack-boilerplate](https://github.com/hubcarl/egg-vue-webpack-boilerplate.git), [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate.git)
 
 
-## 安装
+## 二. 安装
 
 ```bash
 $ npm i easywebpack-cli -g
 ```
 
 
-## 运行
+## 三. 运行
 
 
 ```bash
@@ -35,17 +48,33 @@ Usage: easywebpack [command] [options]
 
 
   Commands:
-
+  
+    init [options]         init webpack config or boilerplate for Vue/React/Weex
     install                npm install
     print  [env] [options] print webpack config, support print by env or config node key
-    build  [env]            webpack building
+    build  [env]           webpack building
     server [env]           webpack building and start server
 
 
 
-## 命令介绍
+## 四. 命令介绍
 
-### 编译举例
+### 4.1 配置模板和Boilerplate初始化
+
+- easywebpack init
+
+> step one:
+
+![nstep one](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-one.png)
+
+> step two:
+
+![step two](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-two.png)
+
+
+默认读取项目根目录下的 `webpack.config.js` 配置
+
+### 4.2 编译举例
 
 - easywebpack build
 
@@ -61,7 +90,7 @@ Usage: easywebpack [command] [options]
 
 - easywebpack build -b wmc 
 
-### 编译和启动服务举例
+### 4.3 编译和启动服务举例
 
 - easywebpack server
 
@@ -75,7 +104,7 @@ Usage: easywebpack [command] [options]
 
 - easywebpack server -b wmc 
 
-### 打印配置
+### 4.4 打印配置
 
 ```bash
 easywebpack print -h
@@ -93,51 +122,23 @@ easywebpack print -h
 
 - easywebpack print -n module
 
+- easywebpack print dev -n entry
+
 - easywebpack print test -n module.rules
 
 - easywebpack print prod -n module.rules[0]
 
-- easywebpack print dev -n plugins
+- easywebpack print -n plugins
 
-- easywebpack print dev -n plugins[0]
+- easywebpack print -n plugins[0]
 
-- easywebpack print dev -n output
+- easywebpack print -n output
 
-- easywebpack print dev -n resolve
+- easywebpack print -n resolve
 
 
-## webpack.config.js
+## 五. License
 
-```js
-module.exports = {
-  egg: true, // 如果是egg项目, 请设置为true, 满足egg目录规范
-  framework: 'vue',
-  commonsChunk: ['vendor'],
-  entry: {
-    include: 'app/web/page',
-    exclude: ['app/web/page/html']
-  },
-  html: {
-    include: 'app/web/page/html',
-    template: 'app/web/view/layout.html',
-    buildDir: 'html',
-    options: {}
-  },
-  alias: {
-    asset: 'app/web/asset',
-    app: 'app/web/framework/vue/app.js',
-    component: 'app/web/component',
-    framework: 'app/web/framework',
-    store: 'app/web/store'
-  },
-  packs: {
-    'pack/inline': ['app/web/framework/inject/pack-inline.js']
-  },
-  create() {
-    if (this.config.type === 'client') {
-      this.addEntry('vendor', ['vue', 'axios']);
-    }
-  }
-};
+[MIT](LICENSE)
 
-```
+说明: npm 模板下载参考 [egg-init](https://github.com/eggjs/egg-init) 脚手架实现.
