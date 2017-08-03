@@ -4,9 +4,9 @@ Webpack Building Command Line And Boilerplate Init Tool for [easywebpack](https:
 
 Global Command `easywebpack` or `easy`,  目前支持如下三种构建:
 
-- `vue` ([easywebpack-vue](https://github.com/hubcarl/easywebpack-vue.git) 
-- `react` ([easywebpack-react](https://github.com/hubcarl/easywebpack-react.git)
-- `weex` ([easywebpack-weex](https://github.com/hubcarl/easywebpack-weex.git)
+- `vue` [easywebpack-vue](https://github.com/hubcarl/easywebpack-vue.git) 
+- `react` [easywebpack-react](https://github.com/hubcarl/easywebpack-react.git)
+- `weex` [easywebpack-weex](https://github.com/hubcarl/easywebpack-weex.git)
 
 其中 `Vue` 和 `React` 支持客户端运行模式构建和服务端模式构建, `Weex` 支持Native模式和Web模式构建.
 
@@ -72,8 +72,6 @@ Usage: easywebpack [command] [options]
 ![step two](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-two.png)
 
 
-默认读取项目根目录下的 `webpack.config.js` 配置
-
 ### 4.2 编译举例
 
 - easywebpack build
@@ -90,6 +88,8 @@ Usage: easywebpack [command] [options]
 
 - easywebpack build -b wmc 
 
+默认读取项目根目录下的 `webpack.config.js` 配置
+
 ### 4.3 编译和启动服务举例
 
 - easywebpack server
@@ -103,6 +103,8 @@ Usage: easywebpack [command] [options]
 - easywebpack server prod
 
 - easywebpack server -b wmc 
+
+默认读取项目根目录下的 `webpack.config.js` 配置
 
 ### 4.4 打印配置
 
@@ -136,6 +138,7 @@ easywebpack print -h
 
 - easywebpack print -n resolve
 
+默认读取项目根目录下的 `webpack.config.js` 配置
 
 ## 五. License
 
