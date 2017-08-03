@@ -1,6 +1,6 @@
 # easywebpack-cli
 
-Webpack Building Command Line And Boilerplate Init Tool for [easywebpack](https://github.com/hubcarl/easywebpack-cli.git).
+Webpack Building Command Line And Boilerplate Init Tool for [easywebpack](https://github.com/hubcarl/easywebpack.git).
 
 Global Command `easywebpack` or `easy`,  目前支持如下三种构建:
 
