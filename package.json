@@ -9,7 +9,9 @@
   "scripts": {
     "lint": "eslint .",
     "fix": "eslint --fix .",
-    "test": "mocha test --timeout 15000 --require co-mocha",
+    "test-mocha": "mocha test --timeout 15000 --require co-mocha",
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "cov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=d7567590-d31c-4c14-8707-574d8ab10c03",
     "ci": "npm run lint && npm run cov"
   },
   "dependencies": {
@@ -25,10 +27,12 @@
   "devDependencies": {
     "chai": "^4.1.0",
     "co-mocha": "^1.2.0",
+    "codecov": "^2.3.0",
     "eslint": "^4.3.0",
     "eslint-config-eslint": "^4.0.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0"
   },
   "files": [
     "index.js",

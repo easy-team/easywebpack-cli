@@ -10,8 +10,8 @@
 [npm-url]: https://npmjs.org/package/easywebpack-cli
 [travis-image]: https://img.shields.io/travis/hubcarl/easywebpack-cli.svg?style=flat-square
 [travis-url]: https://travis-ci.org/hubcarl/easywebpack-cli
-[codecov-image]: https://img.shields.io/codecov/c/github/hubcarl/easywebpack-cli.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/hubcarl/easywebpack-cli?branch=master
+[codecov-image]: https://codecov.io/gh/hubcarl/easywebpack-cli/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/hubcarl/easywebpack-cli
 [david-image]: https://img.shields.io/david/hubcarl/easywebpack-cli.svg?style=flat-square
 [david-url]: https://david-dm.org/hubcarl/easywebpack-cli
 [download-image]: https://img.shields.io/npm/dm/easywebpack-cli.svg?style=flat-square
