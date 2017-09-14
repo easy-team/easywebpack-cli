@@ -11,6 +11,8 @@ const baseDir = process.cwd();
 program
   .version('1.0.0')
   .option('-f, --filename [path]', 'webpack config file name')
+  .option('-p, --port [port]', 'webpack server port')
+  .option('-t, --type [type]', 'webpack build type: client, server, web, weex')
   .option('-w, --watch', 'webpack watch and hot-update')
   .option('-m, --hash', 'webpack md5 hash js/css/image')
   .option('-c, --compress', 'webpack compress js/css/image')
@@ -42,10 +44,10 @@ program
     const webpackConfig = builder.getWebpackConfig(config);
     if (options.node) {
       webpackConfig.forEach(item => {
-        console.log(chalk.green(`==webpack ${options.node}:`), _(item, options.node));
+        console.log(chalk.green(`easywebpack-cli: webpack ${program.type || ''} ${options.node} info:\r\n`), _(item, options.node));
       });
     } else {
-      console.log(chalk.green('==webpack config:'), webpackConfig);
+      console.log(chalk.green(`easywebpack-cli: webpack ${program.type || ''} config info:\r\n`), webpackConfig);
     }
   });
 
