@@ -12,4 +12,5 @@ config
 temp
 .nyc_output
 coverage.lcov
-.vs_code
+.vscode
+dist

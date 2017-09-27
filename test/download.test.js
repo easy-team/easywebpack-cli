@@ -40,7 +40,7 @@ describe('base.test.js', () => {
       yield rimraf(targetDir);
       yield mkdirp(targetDir);
       download.copy(sourceDir, targetDir, { dir: 'build' });
-      expect(fs.existsSync(path.join(targetDir, 'index.js')));
+      expect(fs.existsSync(path.join(targetDir, 'build', 'index.js'))).to.be.true;
     });
   });
 
@@ -59,9 +59,10 @@ describe('base.test.js', () => {
       const targetDir = path.join(process.cwd(), `dist/${vueBoilerplate}`);
       yield rimraf(targetDir);
       yield mkdirp(targetDir);
-      download.copy(sourceDir, targetDir);
+      download.copy(sourceDir, targetDir, { hide: true });
       download.updatePackageFile(targetDir);
-      expect(fs.existsSync(path.join(targetDir, 'index.js')));
+      expect(fs.existsSync(path.join(targetDir, 'index.js'))).to.be.true;
+      expect(fs.existsSync(path.join(targetDir, '.babelrc'))).to.be.true;
     });
   });
 });
