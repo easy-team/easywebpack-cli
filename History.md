@@ -1,4 +1,10 @@
 
+1.1.2 / 2017-10-31
+==================
+
+  * perf: auto set buildfile and manifest false, client render no use
+  * fix: easy init template error
+
 1.1.0 / 2017-09-14
 ==================
 
