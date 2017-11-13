@@ -1,4 +1,9 @@
 
+1.1.3 / 2017-11-13
+==================
+
+  * fix:easy command env params undefined override config
+
 1.1.2 / 2017-10-31
 ==================
 
