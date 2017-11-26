@@ -1,4 +1,9 @@
 
+1.2.0 / 2017-11-26
+==================
+
+  * feat: support multiple static html webpack build solution
+
 1.1.3 / 2017-11-13
 ==================
 
