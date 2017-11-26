@@ -14,3 +14,4 @@ temp
 coverage.lcov
 .vscode
 dist
+package-lock.json

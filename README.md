@@ -19,11 +19,12 @@
 
 Webpack Building Command Line And Boilerplate Init Tool for [easywebpack](https://github.com/hubcarl/easywebpack.git).
 
-Global Command `easywebpack` or `easy`,  目前支持如下三种构建:
+Global Command `easywebpack` or `easy`,  目前支持如下四种构建:
 
 - `vue` [easywebpack-vue](https://github.com/hubcarl/easywebpack-vue.git) 
 - `react` [easywebpack-react](https://github.com/hubcarl/easywebpack-react.git)
 - `weex` [easywebpack-weex](https://github.com/hubcarl/easywebpack-weex.git)
+- `html` [easywebpack-html](https://github.com/hubcarl/easywebpack-html.git) 
 
 其中 `Vue` 和 `React` 支持客户端运行模式构建和服务端模式构建, `Weex` 支持Native模式和Web模式构建.
 
@@ -34,6 +35,7 @@ Global Command `easywebpack` or `easy`,  目前支持如下三种构建:
 - 支持`Vue`,`React`, `Weex` webpack config build 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
 - 支持`Vue`,`React`, `Weex` client render boilerplate 项目初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
 - 支持`Vue`,`React` server side boilerplate 项目初始化[egg-vue-webpack-boilerplate](https://github.com/hubcarl/egg-vue-webpack-boilerplate.git), [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate.git)
+- 支持 `HTML` 静态多页面 Webpack 构建
 
 
 ## 二. 安装
