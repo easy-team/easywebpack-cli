@@ -52,6 +52,17 @@ program
   });
 
 program
+  .command('dll [env]')
+  .description('webpack dll build')
+  .action(env => {
+    if(!program.filename){
+      program.filename = 'webpack.dll.js';
+    }
+    const config = utils.initWebpackConfig(program, { baseDir, env, framework: 'dll' });
+    builder.build(config);
+  });
+
+program
   .command('build [env]')
   .description('webpack building')
   .action(env => {
