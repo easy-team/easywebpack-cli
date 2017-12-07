@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 'use strict';
+const path = require('path');
+const opn = require('opn');
 const program = require('commander');
 const chalk = require('chalk');
 const _ = require('lodash.get');
@@ -7,16 +9,21 @@ const utils = require('../lib/utils');
 const builder = require('../lib/builder');
 const command = require('../lib/command');
 const baseDir = process.cwd();
+const shell = require('shelljs');
+const pkg = require(path.join(__dirname, '../package.json'));
 
 program
-  .version('1.0.0')
+  .version(pkg.version)
   .option('-f, --filename [path]', 'webpack config file name')
   .option('-p, --port [port]', 'webpack server port')
   .option('-t, --type [type]', 'webpack build type: client, server, web, weex')
   .option('-w, --watch', 'webpack watch and hot-update')
-  .option('-m, --hash', 'webpack md5 hash js/css/image')
+  .option('-m, --md5', 'webpack md5 hash js/css/image')
   .option('-c, --compress', 'webpack compress js/css/image')
-  .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc');
+  .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
+  .option('-d, --dll', 'only webpack dll config')
+  .option('-b, --web', 'only webpack web config')
+  .option('-s, --node', 'only webpack node config');
 
 
 program
@@ -41,9 +48,11 @@ program
   .description('print webpack config, support print by env or config node key')
   .action((env, options) => {
     const config = utils.initWebpackConfig(program, { baseDir, env });
-    const webpackConfig = builder.getWebpackConfig(config);
+    const option = utils.initOption(program);
+    const webpackConfig = builder.getWebpackConfig(config, option);
+    const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : [webpackConfig];
     if (options.node) {
-      webpackConfig.forEach(item => {
+      webpackConfigList.forEach(item => {
         console.log(chalk.green(`easywebpack-cli: webpack ${program.type || ''} ${options.node} info:\r\n`), _(item, options.node));
       });
     } else {
@@ -55,11 +64,12 @@ program
   .command('dll [env]')
   .description('webpack dll build')
   .action(env => {
-    if(!program.filename){
+    if (!program.filename) {
       program.filename = 'webpack.dll.js';
     }
     const config = utils.initWebpackConfig(program, { baseDir, env, framework: 'dll' });
-    builder.build(config);
+    const option = utils.initOption(program);
+    builder.build(config, option);
   });
 
 program
@@ -67,7 +77,8 @@ program
   .description('webpack building')
   .action(env => {
     const config = utils.initWebpackConfig(program, { baseDir, env });
-    builder.build(config);
+    const option = utils.initOption(program);
+    builder.build(config, option);
   });
 
 program
@@ -75,7 +86,8 @@ program
   .description('webpack building and start server')
   .action(env => {
     const config = utils.initWebpackConfig(program, { baseDir, env });
-    builder.server(config);
+    const option = utils.initOption(program);
+    builder.server(config, option);
   });
 
 program
@@ -83,7 +95,30 @@ program
   .description('webpack building and start server')
   .action(env => {
     const config = utils.initWebpackConfig(program, { baseDir, env });
-    builder.server(config);
+    const option = utils.initOption(program);
+    builder.server(config, option);
+  });
+
+program
+  .command('clean')
+  .description('webpack cache clean')
+  .action(() => {
+    const dir = utils.getCompileTempDir(baseDir);
+    const result = shell.exec(`rm -rf ${dir}`);
+    if (result.code === 0) {
+      utils.log(`clean dir [ ${dir} ] success`)
+    }else{
+      utils.log(`clean dir [ ${dir} ] failed`)
+    }
+  });
+
+program
+  .command('open [dir]')
+  .description('open webpack cache dir')
+  .action(dir => {
+    const filepath = dir ? dir :  utils.getCompileTempDir(baseDir);
+    opn(filepath);
+    process.exit();
   });
 
 program.parse(process.argv);
