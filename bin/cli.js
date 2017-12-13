@@ -53,10 +53,10 @@ program
     const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : [webpackConfig];
     if (options.node) {
       webpackConfigList.forEach(item => {
-        console.log(chalk.green(`easywebpack-cli: webpack ${program.type || ''} ${options.node} info:\r\n`), _(item, options.node));
+        console.log(chalk.green(`easywebpack-cli: webpack ${program.type || item.target || ''} ${options.node} info:\r\n`), _(item, options.node));
       });
     } else {
-      console.log(chalk.green(`easywebpack-cli: webpack ${program.type || ''} config info:\r\n`), webpackConfig);
+      console.log(chalk.green(`easywebpack-cli: webpack config info:\r\n`), webpackConfig);
     }
   });
 
