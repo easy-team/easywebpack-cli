@@ -1,5 +1,11 @@
-#!/usr/bin/env node
-'use strict';
+import {
+  cat
+} from '../../../../../Library/Caches/typescript/2.6/node_modules/@types/shelljs';
+
+#
+!/usr/bin / env node
+
+  'use strict';
 const path = require('path');
 const opn = require('opn');
 const program = require('commander');
@@ -47,7 +53,10 @@ program
   .option('-n, --node [key]', 'print webpack config info by config node key, example: [module/module.rules/plugins] and so on')
   .description('print webpack config, support print by env or config node key')
   .action((env, options) => {
-    const config = utils.initWebpackConfig(program, { baseDir, env });
+    const config = utils.initWebpackConfig(program, {
+      baseDir,
+      env
+    });
     const option = utils.initOption(program);
     const webpackConfig = builder.getWebpackConfig(config, option);
     const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : [webpackConfig];
@@ -67,7 +76,11 @@ program
     if (!program.filename) {
       program.filename = 'webpack.dll.js';
     }
-    const config = utils.initWebpackConfig(program, { baseDir, env, framework: 'dll' });
+    const config = utils.initWebpackConfig(program, {
+      baseDir,
+      env,
+      framework: 'dll'
+    });
     const option = utils.initOption(program);
     builder.build(config, option);
   });
@@ -76,7 +89,10 @@ program
   .command('build [env]')
   .description('webpack building')
   .action(env => {
-    const config = utils.initWebpackConfig(program, { baseDir, env });
+    const config = utils.initWebpackConfig(program, {
+      baseDir,
+      env
+    });
     const option = utils.initOption(program);
     builder.build(config, option);
   });
@@ -85,7 +101,10 @@ program
   .command('server [env]')
   .description('webpack building and start server')
   .action(env => {
-    const config = utils.initWebpackConfig(program, { baseDir, env });
+    const config = utils.initWebpackConfig(program, {
+      baseDir,
+      env
+    });
     const option = utils.initOption(program);
     builder.server(config, option);
   });
@@ -94,7 +113,10 @@ program
   .command('start [env]')
   .description('webpack building and start server')
   .action(env => {
-    const config = utils.initWebpackConfig(program, { baseDir, env });
+    const config = utils.initWebpackConfig(program, {
+      baseDir,
+      env
+    });
     const option = utils.initOption(program);
     builder.server(config, option);
   });
@@ -107,7 +129,7 @@ program
     const result = shell.exec(`rm -rf ${dir}`);
     if (result.code === 0) {
       utils.log(`clean dir [ ${dir} ] success`)
-    }else{
+    } else {
       utils.log(`clean dir [ ${dir} ] failed`)
     }
   });
@@ -116,9 +138,14 @@ program
   .command('open [dir]')
   .description('open webpack cache dir')
   .action(dir => {
-    const filepath = dir ? dir :  utils.getCompileTempDir(baseDir);
+    const filepath = dir ? dir : utils.getCompileTempDir(baseDir);
     opn(filepath);
-    process.exit();
+    try {
+      process.exit();
+    } catch (e) {
+
+    }
+
   });
 
 program.parse(process.argv);

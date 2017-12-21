@@ -73,6 +73,8 @@ Usage: easywebpack [command] [options]
     print  [env] [options] print webpack config, support print by env or config node key
     build  [env]           webpack building
     server [env]           webpack building and start server
+    clean  [env]           clean webpack cache
+    open   [dir]           open webpack cache dir
 
 
 
@@ -156,6 +158,20 @@ easywebpack print -h
 - easywebpack print -n output
 
 - easywebpack print -n resolve
+
+### 4.5 清除缓存
+
+```bash
+easy clean
+```
+
+
+### 4.6 打开缓存目录
+
+```bash
+easy open
+```
+
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
