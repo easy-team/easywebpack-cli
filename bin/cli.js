@@ -1,11 +1,6 @@
-import {
-  cat
-} from '../../../../../Library/Caches/typescript/2.6/node_modules/@types/shelljs';
+#!/usr/bin/env node
 
-#
-!/usr/bin / env node
-
-  'use strict';
+'use strict';
 const path = require('path');
 const opn = require('opn');
 const program = require('commander');
@@ -65,7 +60,7 @@ program
         console.log(chalk.green(`easywebpack-cli: webpack ${program.type || item.target || ''} ${options.node} info:\r\n`), _(item, options.node));
       });
     } else {
-      console.log(chalk.green(`easywebpack-cli: webpack config info:\r\n`), webpackConfig);
+      console.log(chalk.green('easywebpack-cli: webpack config info:\r\n'), webpackConfig);
     }
   });
 
@@ -128,9 +123,9 @@ program
     const dir = utils.getCompileTempDir(baseDir);
     const result = shell.exec(`rm -rf ${dir}`);
     if (result.code === 0) {
-      utils.log(`clean dir [ ${dir} ] success`)
+      utils.log(`clean dir [ ${dir} ] success`);
     } else {
-      utils.log(`clean dir [ ${dir} ] failed`)
+      utils.log(`clean dir [ ${dir} ] failed`);
     }
   });
 
@@ -140,12 +135,7 @@ program
   .action(dir => {
     const filepath = dir ? dir : utils.getCompileTempDir(baseDir);
     opn(filepath);
-    try {
-      process.exit();
-    } catch (e) {
-
-    }
-
+    process.exit();
   });
 
 program.parse(process.argv);
