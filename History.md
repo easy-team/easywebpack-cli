@@ -1,4 +1,9 @@
 
+1.3.0 / 2017-12-21
+==================
+
+  * feat: support webpack dll build, support `easy clean`  and `easy open` command
+
 1.2.0 / 2017-11-26
 ==================
 
