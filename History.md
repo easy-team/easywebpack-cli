@@ -1,4 +1,10 @@
 
+3.5.2 / 2017-12-25
+==================
+
+  * feat: add webpack.config.js filepath for dll auto check update function
+  * fix:vscode auto import code
+
 3.5.0 / 2017-12-21
 ==================
 
