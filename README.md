@@ -163,7 +163,7 @@ easy clean
 easy open
 ```
 
-### 4.7 杀进程(3.6.0)
+### 4.7 杀进程(3.6.0)
 
 ```bash
 easy kill 7001
