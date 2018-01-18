@@ -91,19 +91,14 @@ Usage: easy [command] [options]
 
 ### 4.2 编译举例
 
-// 开发模式编译
 - easy build
 
-// 指定配置文件
 - easy build -f build/webpack.config.js
 
-// 开发模式编译
 - easy build dev
 
-// 测试模式编译
 - easy build test
 
-// 正式模式编译
 - easy build prod
 
 默认读取项目根目录下的 `webpack.config.js` 配置
@@ -168,14 +163,14 @@ easy clean
 easy open
 ```
 
-### 4.7 杀进程（^3.6.0)
+### 4.7 杀进程(3.6.0)
 
 ```bash
 easy kill 7001
 easy kill 7001,9000,9001
 ```
 
-### 4.8 构建大小分析（^3.6.0)
+### 4.8 构建大小分析(3.6.0)
 
 通过 `-s` 参数启动构建大小分析工具, 支持 `analyzer`(webpack-bundle-analyzer)  和 `stats`(stats-webpack-plugin) ,  默认用 `analyzer`插件。
 
