@@ -17,25 +17,18 @@
 [download-image]: https://img.shields.io/npm/dm/easywebpack-cli.svg?style=flat-square
 [download-url]: https://npmjs.org/package/easywebpack-cli
 
-Webpack Building Command Line And Boilerplate Init Tool for [easywebpack](https://github.com/hubcarl/easywebpack.git).
-
-Global Command `easywebpack` or `easy`,  目前支持如下四种构建:
-
-- `vue` [easywebpack-vue](https://github.com/hubcarl/easywebpack-vue.git) 
-- `react` [easywebpack-react](https://github.com/hubcarl/easywebpack-react.git)
-- `weex` [easywebpack-weex](https://github.com/hubcarl/easywebpack-weex.git)
-- `html` [easywebpack-html](https://github.com/hubcarl/easywebpack-html.git) 
-
-其中 `Vue` 和 `React` 支持客户端运行模式构建和服务端模式构建, `Weex` 支持Native模式和Web模式构建.
+easywebpack cli 命令行工具 for [easywebpack](https://github.com/hubcarl/easywebpack.git), 支持常用骨架初始化, Webpack 编译功能
 
 ## 一.特性
 
-- 支持`Vue`,`React`, `Weex` Webpack 编译和Server功能
-- 支持`Vue`,`React`, `Weex` easywepback-cli 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
-- 支持`Vue`,`React`, `Weex` webpack config build 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
-- 支持`Vue`,`React`, `Weex` client render boilerplate 项目初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
-- 支持`Vue`,`React` server side boilerplate 项目初始化[egg-vue-webpack-boilerplate](https://github.com/hubcarl/egg-vue-webpack-boilerplate.git), [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate.git)
 - 支持 `HTML` 静态多页面 Webpack 构建
+- 支持 `Vue`,`React`, `Weex` Webpack 编译和Server功能
+- 支持 `Vue`,`React`, `Weex` easywepback-cli 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
+- 支持 `Vue`,`React`, `Weex` webpack config build 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
+- 支持 `Vue`,`React`, `Weex` client render boilerplate 项目初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
+- 支持 `Vue`,`React` server side boilerplate 项目初始化[egg-vue-webpack-boilerplate](https://github.com/hubcarl/egg-vue-webpack-boilerplate.git), [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate.git)
+- 支持 `Egg + TypeScript + Vue/React` server side boilerplate 项目初始化[egg-vue-typescript-boilerplate](https://github.com/hubcarl/egg-vue-typescript-boilerplate.git), - [egg-react-typescript-boilerplate](https://github.com/hubcarl/egg-react-typescript-boilerplate.git)
+- 支持 `easy open [dir]`, `easy kill [port], easy clean [dir]` 常用命令 
 
 
 ## 二. 安装
@@ -44,15 +37,17 @@ Global Command `easywebpack` or `easy`,  目前支持如下四种构建:
 $ npm i easywebpack-cli -g
 ```
 
+全局命令 `easywebpack` or `easy`,  目前支持如下四种构建:
+
 
 ## 三. 运行
 
 
 ```bash
-easywebapck -h
+easy -h
 ```
 
-Usage: easywebpack [command] [options]
+Usage: easy [command] [options]
 
 
   Options:
@@ -75,6 +70,7 @@ Usage: easywebpack [command] [options]
     server [env]           webpack building and start server
     clean  [env]           clean webpack cache
     open   [dir]           open webpack cache dir
+    kill   [port]          kill port, such as 7001 or 7001,9000,9001
 
 
 
@@ -82,11 +78,11 @@ Usage: easywebpack [command] [options]
 
 ### 4.1 配置模板和Boilerplate初始化
 
-- easywebpack init
+- easy init
 
 > step one:
 
-![nstep one](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-one.png)
+![step one](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-one.png)
 
 > step two:
 
@@ -95,47 +91,47 @@ Usage: easywebpack [command] [options]
 
 ### 4.2 编译举例
 
-- easywebpack build
+- easy build
 
-- easywebpack build -f build/webpack.config.js
+- easy build -f build/webpack.config.js
 
-- easywebpack build -c
+- easy build -c
 
-- easywebpack build dev
+- easy build dev
 
-- easywebpack build test
+- easy build test
 
-- easywebpack build prod
+- easy build prod
 
-- easywebpack build -b wmc 
+- easy build -b wmc 
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
 ### 4.3 编译和启动服务举例
 
-- easywebpack server
+- easy server
 
-- easywebpack server -f build/webpack.config.js
+- easy server -f build/webpack.config.js
 
-- easywebpack server dev
+- easy server dev
 
-- easywebpack server test
+- easy server test
 
-- easywebpack server prod
+- easy server prod
 
-- easywebpack server -b wmc 
+- easy server -b wmc 
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
 ### 4.4 打印配置
 
 ```bash
-easywebpack print -h
+easy print -h
 ```
 
- Usage: print [env] [options]
+  Usage: print [env] [options]
 
-  print webpack config, support print by env or config node key
+    print webpack config, support print by env or config node key
 
 
   Options:
@@ -143,21 +139,21 @@ easywebpack print -h
     -n, --node [key]  print webpack config info by config node key, example: [module/module.rules/plugins] and so on
     -h, --help        output usage information
 
-- easywebpack print -n module
+- easy print -n module
 
-- easywebpack print dev -n entry
+- easy print dev -n entry
 
-- easywebpack print test -n module.rules
+- easy print test -n module.rules
 
-- easywebpack print prod -n module.rules[0]
+- easy print prod -n module.rules[0]
 
-- easywebpack print -n plugins
+- easy print -n plugins
 
-- easywebpack print -n plugins[0]
+- easy print -n plugins[0]
 
-- easywebpack print -n output
+- easy print -n output
 
-- easywebpack print -n resolve
+- easy print -n resolve
 
 ### 4.5 清除缓存
 
@@ -170,6 +166,13 @@ easy clean
 
 ```bash
 easy open
+```
+
+### 4.7 杀进程
+
+```bash
+easy kill 7001
+easy kill 7001,9000,9001
 ```
 
 

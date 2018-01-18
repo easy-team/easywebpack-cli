@@ -2,15 +2,14 @@
 
 'use strict';
 const path = require('path');
-const opn = require('opn');
 const program = require('commander');
 const chalk = require('chalk');
 const _ = require('lodash.get');
+const tool = require('../lib/tool');
 const utils = require('../lib/utils');
 const builder = require('../lib/builder');
 const command = require('../lib/command');
 const baseDir = process.cwd();
-const shell = require('shelljs');
 const pkg = require(path.join(__dirname, '../package.json'));
 
 program
@@ -117,15 +116,17 @@ program
   });
 
 program
-  .command('clean')
-  .description('webpack cache clean')
-  .action(() => {
-    const dir = utils.getCompileTempDir(baseDir);
-    const result = shell.exec(`rm -rf ${dir}`);
-    if (result.code === 0) {
-      utils.log(`clean dir [ ${dir} ] success`);
+  .command('clean [dir]')
+  .description('webpack cache dir clean, if dir == "all", will clean cache dir and build dir')
+  .action(dir => {
+    if (dir === 'all') {
+      utils.clearTempDir(baseDir);
+      utils.clearManifest(baseDir);
+      utils.clearBuildDir(baseDir);
+    } else if (dir) {
+      utils.rm(dir);
     } else {
-      utils.log(`clean dir [ ${dir} ] failed`);
+      utils.clearTempDir(baseDir);
     }
   });
 
@@ -134,8 +135,16 @@ program
   .description('open webpack cache dir')
   .action(dir => {
     const filepath = dir ? dir : utils.getCompileTempDir(baseDir);
-    opn(filepath);
+    tool.open(filepath);
     process.exit();
+  });
+
+// lsof -i tcp:7001 | grep LISTEN | awk \'{print $2}\' | xargs kill -9
+program
+  .command('kill [port]')
+  .description('kill port process, default will kill 7001, 9000, 9001')
+  .action(port => {
+    tool.kill(port || '7001,9000,9001');
   });
 
 program.parse(process.argv);
