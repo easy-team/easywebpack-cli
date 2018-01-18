@@ -12,16 +12,20 @@
     "indent": [
       "error",
       2,
-      {
-        "SwitchCase": 1
-      }
+      { "SwitchCase": 1 }
     ],
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "no-cond-assign": "off",
+    "lines-around-comment": "off",
+    "arrow-body-style": "off",
     "no-confusing-arrow": "off",
     "class-methods-use-this": "off",
     "newline-after-var": "off",
     "no-invalid-this": "off",
     "no-nested-ternary": "off",
-    "no-process-exit": "off",
+    "no-unused-vars": "off",
+    "eol-last": "off",
     "quotes": [
       "error",
       "single"
