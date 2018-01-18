@@ -82,11 +82,11 @@ Usage: easy [command] [options]
 
 > step one:
 
-![step one](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-one.png)
+![step one](/doc/easywebpack-cli.step.one.png)
 
 > step two:
 
-![step two](https://github.com/hubcarl/easywebpack-cli/blob/master/doc/cli-init-step-two.png)
+![step two](/doc/easywebpack-cli.step.two.png)
 
 
 ### 4.2 编译举例
