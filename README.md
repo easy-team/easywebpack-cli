@@ -37,7 +37,7 @@ easywebpack cli 命令行工具 for [easywebpack](https://github.com/hubcarl/eas
 $ npm i easywebpack-cli -g
 ```
 
-全局命令 `easywebpack` or `easy`,  目前支持如下四种构建:
+按照成功后, 可以在命令行使用全局命令 `easywebpack` or `easy`
 
 
 ## 三. 运行
@@ -91,19 +91,20 @@ Usage: easy [command] [options]
 
 ### 4.2 编译举例
 
+// 开发模式编译
 - easy build
 
+// 指定配置文件
 - easy build -f build/webpack.config.js
 
-- easy build -c
-
+// 开发模式编译
 - easy build dev
 
+// 测试模式编译
 - easy build test
 
+// 正式模式编译
 - easy build prod
-
-- easy build -b wmc 
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
@@ -161,18 +162,31 @@ easy print -h
 easy clean
 ```
 
-
 ### 4.6 打开缓存目录
 
 ```bash
 easy open
 ```
 
-### 4.7 杀进程
+### 4.7 杀进程（^3.6.0)
 
 ```bash
 easy kill 7001
 easy kill 7001,9000,9001
+```
+
+### 4.8 构建大小分析（^3.6.0)
+
+通过 `-s` 参数启动构建大小分析工具, 支持 `analyzer`(webpack-bundle-analyzer)  和 `stats`(stats-webpack-plugin) ,  默认用 `analyzer`插件。
+
+```bash
+easy build -s 
+```
+
+使用 `stats`(stats-webpack-plugin) 构建大小分析工具
+
+```bash
+easy build -s stats
 ```
 
 

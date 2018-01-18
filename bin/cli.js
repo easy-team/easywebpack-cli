@@ -21,9 +21,10 @@ program
   .option('-m, --md5', 'webpack md5 hash js/css/image')
   .option('-c, --compress', 'webpack compress js/css/image')
   .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
+  .option('-s, --size [option]', 'ebpack build size analyzer tool, support size: analyzer and stats, default analyzer')
   .option('-d, --dll', 'only webpack dll config')
   .option('-b, --web', 'only webpack web config')
-  .option('-s, --node', 'only webpack node config');
+  .option('-n, --node', 'only webpack node config');
 
 
 program
