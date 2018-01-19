@@ -14,7 +14,7 @@ const pkg = require(path.join(__dirname, '../package.json'));
 
 program
   .version(pkg.version)
-  .option('-f, --filename [path]', 'webpack config file name')
+  .option('-f, --filename [path]', 'webpack config file path')
   .option('-p, --port [port]', 'webpack server port')
   .option('-t, --type [type]', 'webpack build type: client, server, web, weex')
   .option('-w, --watch', 'webpack watch and hot-update')
@@ -22,9 +22,9 @@ program
   .option('-c, --compress', 'webpack compress js/css/image')
   .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
   .option('-s, --size [option]', 'ebpack build size analyzer tool, support size: analyzer and stats, default analyzer')
-  .option('-d, --dll', 'only webpack dll config')
-  .option('-b, --web', 'only webpack web config')
-  .option('-n, --node', 'only webpack node config');
+  .option('--dll', 'only webpack dll config')
+  .option('--web', 'only webpack web config')
+  .option('--node', 'only webpack node config');
 
 
 program
@@ -37,10 +37,18 @@ program
 
 program
   .command('install')
-  .option('-r, --registry [url]', 'npm registry, default https://registry.npmjs.org, you can taobao registry: https://registry.npm.taobao.org')
-  .description('npm install')
+  .option('--mode [mode]', 'mode: npm, cnpm, tnpm, yarn and so on')
+  .description('dynamic install easywebpack missing npm module')
   .action(options => {
-    builder.install(options);
+    const config = utils.initWebpackConfig(program, {
+      baseDir,
+      install: {
+        check: true,
+        npm: options.mode || 'npm'
+      }
+    });
+    const option = utils.initOption(program);
+    builder.getWebpackConfig(config, option);
   });
 
 program
@@ -68,15 +76,12 @@ program
   .command('dll [env]')
   .description('webpack dll build')
   .action(env => {
-    if (!program.filename) {
-      program.filename = 'webpack.dll.js';
-    }
     const config = utils.initWebpackConfig(program, {
       baseDir,
       env,
       framework: 'dll'
     });
-    const option = utils.initOption(program);
+    const option = utils.initOption(program, { onlyDll: true });
     builder.build(config, option);
   });
 

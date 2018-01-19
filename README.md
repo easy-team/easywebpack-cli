@@ -132,24 +132,24 @@ easy print -h
 
   Options:
 
-    -n, --node [key]  print webpack config info by config node key, example: [module/module.rules/plugins] and so on
+    -k, --key [name]  print webpack config info by config key name, example: [module/module.rules/plugins] and so on
     -h, --help        output usage information
 
-- easy print -n module
+- easy print -k module
 
-- easy print dev -n entry
+- easy print dev -k entry
 
-- easy print test -n module.rules
+- easy print test -k module.rules
 
-- easy print prod -n module.rules[0]
+- easy print prod -k module.rules[0]
 
-- easy print -n plugins
+- easy print -k plugins
 
-- easy print -n plugins[0]
+- easy print -k plugins[0]
 
-- easy print -n output
+- easy print -k output
 
-- easy print -n resolve
+- easy print -k resolve
 
 ### 4.5 清除缓存
 
