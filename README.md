@@ -2,7 +2,6 @@
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
 [![David deps][david-image]][david-url]
 [![npm download][download-image]][download-url]
 
@@ -119,37 +118,20 @@ Usage: easy [command] [options]
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
-### 4.4 打印配置
+### 4.4 动态安装
+
+`easywebpack` 解决方案只内置了必须的几个常用 loader 和 plugin, 其他 loader (比如 less, stylus) 和 plugin (imagemini) 都是需要项目自己根据需要安装。
+如果你自己搭建项目，遇到依赖缺失错误，除了手动 npm install 安装以外, 可以使用 `easy install` 命令，安装所有缺失的依赖，默认是 `npm` 方式
 
 ```bash
-easy print -h
+easy install
 ```
 
-  Usage: print [env] [options]
+通过 `mode` 参数指定 `cnpm` 方式安装依赖(前提是你全局安装了cnpm)
 
-    print webpack config, support print by env or config node key
-
-
-  Options:
-
-    -k, --key [name]  print webpack config info by config key name, example: [module/module.rules/plugins] and so on
-    -h, --help        output usage information
-
-- easy print -k module
-
-- easy print dev -k entry
-
-- easy print test -k module.rules
-
-- easy print prod -k module.rules[0]
-
-- easy print -k plugins
-
-- easy print -k plugins[0]
-
-- easy print -k output
-
-- easy print -k resolve
+```bash
+easy install --mode cnpm
+```
 
 ### 4.5 清除缓存
 
@@ -184,6 +166,37 @@ easy build -s
 easy build -s stats
 ```
 
+### 4.9 打印配置
+
+```bash
+easy print -h
+```
+
+  Usage: print [env] [options]
+
+    print webpack config, support print by env or config node key
+
+
+  Options:
+
+    -k, --key [name]  print webpack config info by config key name, example: [module/module.rules/plugins] and so on
+    -h, --help        output usage information
+
+- easy print -k module
+
+- easy print dev -k entry
+
+- easy print test -k module.rules
+
+- easy print prod -k module.rules[0]
+
+- easy print -k plugins
+
+- easy print -k plugins[0]
+
+- easy print -k output
+
+- easy print -k resolve
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
