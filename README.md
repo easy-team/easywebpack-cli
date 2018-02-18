@@ -25,10 +25,10 @@ easywebpack cli 命令行工具 for [easywebpack](https://github.com/hubcarl/eas
 - 支持 `Vue`,`React`, `Weex` easywepback-cli 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
 - 支持 `Vue`,`React`, `Weex` webpack config build 配置初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
 - 支持 `Vue`,`React`, `Weex` client render boilerplate 项目初始化[easywebpack-cli-template](https://github.com/hubcarl/easywebpack-cli-template.git)
-- 支持 `Vue`,`React` server side boilerplate 项目初始化[egg-vue-webpack-boilerplate](https://github.com/hubcarl/egg-vue-webpack-boilerplate.git), [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate.git)
+- 支持 `Vue`,`React` server side boilerplate 多页面和单页面项目初始化[egg-vue-webpack-boilerplate](https://github.com/hubcarl/egg-vue-webpack-boilerplate.git), [egg-react-webpack-boilerplate](https://github.com/hubcarl/egg-react-webpack-boilerplate.git)
 - 支持 `Egg + TypeScript + Vue/React` server side boilerplate 项目初始化[egg-vue-typescript-boilerplate](https://github.com/hubcarl/egg-vue-typescript-boilerplate.git), - [egg-react-typescript-boilerplate](https://github.com/hubcarl/egg-react-typescript-boilerplate.git)
 - 支持 `easy open [dir]`, `easy kill [port], easy clean [dir]` 常用命令 
-
+- 支持 `npm package` 项目初始化, 内置ESlint, 单元测试, 覆盖率, CI构建
 
 ## 二. 安装
 
@@ -81,11 +81,11 @@ Usage: easy [command] [options]
 
 > step one:
 
-![step one](/doc/easywebpack-cli.step.one.png)
+![step one](/doc/easy-init-step-one.png)
 
 > step two:
 
-![step two](/doc/easywebpack-cli.step.two.png)
+![step two](/doc/easy-init-step-two.png)
 
 
 ### 4.2 编译举例
