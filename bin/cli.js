@@ -81,7 +81,7 @@ program
       env,
       framework: 'dll'
     });
-    const option = utils.initOption(program, { onlyDll: true });
+    const option = utils.initOption(program, { onlyDll: true }, config);
     builder.build(config, option);
   });
 
@@ -93,7 +93,7 @@ program
       baseDir,
       env
     });
-    const option = utils.initOption(program);
+    const option = utils.initOption(program, {}, config);
     builder.build(config, option);
   });
 
@@ -105,7 +105,7 @@ program
       baseDir,
       env
     });
-    const option = utils.initOption(program);
+    const option = utils.initOption(program, {}, config);
     builder.server(config, option);
   });
 
@@ -117,7 +117,7 @@ program
       baseDir,
       env
     });
-    const option = utils.initOption(program);
+    const option = utils.initOption(program, {}, config);
     builder.server(config, option);
   });
 
