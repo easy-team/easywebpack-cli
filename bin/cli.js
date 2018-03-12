@@ -2,6 +2,7 @@
 
 'use strict';
 const path = require('path');
+const fs = require('fs');
 const program = require('commander');
 const chalk = require('chalk');
 const _ = require('lodash.get');
@@ -49,6 +50,13 @@ program
     });
     const option = utils.initOption(program);
     builder.getWebpackConfig(config, option);
+  });
+
+program
+  .command('upgrade')
+  .description('upgrade project package to latest version')
+  .action(() => {
+    require('../lib/upgrade')(baseDir);
   });
 
 program

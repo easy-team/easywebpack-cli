@@ -64,12 +64,13 @@ Usage: easy [command] [options]
   
     init [options]         init webpack config or boilerplate for Vue/React/Weex
     install                npm install
-    print  [env] [options] print webpack config, support print by env or config node key
-    build  [env]           webpack building
-    server [env]           webpack building and start server
-    clean  [env]           clean webpack cache
-    open   [dir]           open webpack cache dir
-    kill   [port]          kill port, such as 7001 or 7001,9000,9001
+    print   [env] [options] print webpack config, support print by env or config node key
+    build   [env]           webpack building
+    server  [env]           webpack building and start server
+    clean   [env]           clean webpack cache
+    open    [dir]           open webpack cache dir
+    upgrade                 upgrade project easywebpack relation package to latest version
+    kill   [port]           kill port, such as 7001 or 7001,9000,9001
 
 
 
