@@ -1,3 +1,18 @@
+<a name="3.9.0"></a>
+# [3.9.0](https://github.com/hubcarl/easywebpack-cli/compare/3.8.0...3.9.0) (2018-03-13)
+
+
+### Bug Fixes
+
+* file path use path.join ([52b9073](https://github.com/hubcarl/easywebpack-cli/commit/52b9073))
+
+
+### Features
+
+* easy upgrade command and fix easy clean in windows ([a1d0fd5](https://github.com/hubcarl/easywebpack-cli/commit/a1d0fd5))
+
+
+
 <a name="3.7.0"></a>
 # [3.7.0](https://github.com/hubcarl/easywebpack-cli/compare/3.5.2...3.7.0) (2018-02-18)
 
