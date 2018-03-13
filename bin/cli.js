@@ -138,7 +138,7 @@ program
       utils.clearManifest(baseDir);
       utils.clearBuildDir(baseDir);
     } else if (dir) {
-      utils.rm(dir);
+      tool.rm(dir);
     } else {
       utils.clearTempDir(baseDir);
     }
