@@ -1,3 +1,13 @@
+<a name="3.9.1"></a>
+## [3.9.1](https://github.com/hubcarl/easywebpack-cli/compare/3.9.0...3.9.1) (2018-03-13)
+
+
+### Bug Fixes
+
+* fix: clean [dir] ([5eb7069](https://github.com/hubcarl/easywebpack-cli/commit/5eb7069))
+
+
+
 <a name="3.9.0"></a>
 # [3.9.0](https://github.com/hubcarl/easywebpack-cli/compare/3.8.0...3.9.0) (2018-03-13)
 
