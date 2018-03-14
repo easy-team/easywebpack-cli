@@ -105,7 +105,7 @@ describe('utils.test.js', () => {
       const option = utils.initWebpackConfig(program, {
         baseDir: path.join(baseDir, 'test'),
         framework: 'js',
-        env: 'test',
+        env: 'test'
       });
       expect(option.framework).to.equal('js');
       expect(option.type).to.equal('client');
