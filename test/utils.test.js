@@ -38,16 +38,6 @@ describe('utils.test.js', () => {
       expect(utils.getInstallPackage('commander').name).to.be.string;
     });
 
-    it('should utils clearTempDir test', function* () {
-      const dist = utils.getCompileTempDir();
-      const target = path.posix.join(dist, 'test.json');
-      yield mkdirp(path.dirname(dist));
-      fs.writeFileSync(target, 'clearTempDir')
-      expect(fs.existsSync(target)).to.be.true;
-      utils.clearTempDir();
-      expect(fs.existsSync(target)).to.be.false;
-    });
-
     it('should utils clearManifest test', function* () {
       const dist = utils.getCompileTempDir();
       const target = path.posix.join(dist, 'config/manifest.json');
@@ -64,6 +54,16 @@ describe('utils.test.js', () => {
       yield mkdirp(target);
       expect(fs.existsSync(target)).to.be.true;
       utils.clearBuildDir(dist);
+      expect(fs.existsSync(target)).to.be.false;
+    });
+
+    it('should utils clearTempDir test', function* () {
+      const dist = utils.getCompileTempDir();
+      const target = path.posix.join(dist, `${Math.floor(Math.random()*100000)}_test.json`);
+      yield mkdirp(path.dirname(dist));
+      fs.writeFileSync(target, 'clearTempDir', 'utf8')
+      expect(fs.existsSync(target)).to.be.true;
+      utils.clearTempDir();
       expect(fs.existsSync(target)).to.be.false;
     });
 
