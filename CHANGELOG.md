@@ -1,3 +1,14 @@
+<a name="3.9.2"></a>
+## [3.9.2](https://github.com/hubcarl/easywebpack-cli/compare/3.9.1...3.9.2) (2018-03-14)
+
+
+### Bug Fixes
+
+* path ([12d5c2b](https://github.com/hubcarl/easywebpack-cli/commit/12d5c2b))
+* path and delete file ([dbd70eb](https://github.com/hubcarl/easywebpack-cli/commit/dbd70eb))
+
+
+
 <a name="3.9.1"></a>
 ## [3.9.1](https://github.com/hubcarl/easywebpack-cli/compare/3.9.0...3.9.1) (2018-03-13)
 
