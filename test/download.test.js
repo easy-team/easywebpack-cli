@@ -24,6 +24,17 @@ describe('base.test.js', () => {
   afterEach(() => {
   });
 
+  describe('#npm download cli test', () => {
+    const projectDir = path.join(process.cwd(), 'dist/cli');
+    it('should init cli config test', function *() {
+      download.init(projectDir, 'easywebpack-cli-template', {}, { type: 'cli', baseDir: 'cli', framework: 'cli', dir: false });
+    });
+
+    it('should init egg-react-webpack-boilerplate test', function *() {
+      download.init(projectDir, 'egg-react-webpack-boilerplate', { }, { hide: true, update: true });
+    });
+  });
+
   describe('#npm download build script test', () => {
 
     const vueBuildScript = 'easywebpack-vue-build-script';
