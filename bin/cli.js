@@ -5,6 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const program = require('commander');
 const chalk = require('chalk');
+const Archive = require('archive-tool');
 const _ = require('lodash.get');
 const tool = require('../lib/tool');
 const utils = require('../lib/utils');
@@ -22,7 +23,7 @@ program
   .option('-m, --md5', 'webpack md5 hash js/css/image')
   .option('-c, --compress', 'webpack compress js/css/image')
   .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
-  .option('-s, --size [option]', 'ebpack build size analyzer tool, support size: analyzer and stats, default analyzer')
+  .option('-s, --size [option]', 'webpack build size analyzer tool, support size: analyzer and stats, default analyzer')
   .option('--dll', 'only webpack dll config')
   .option('--web', 'only webpack web config')
   .option('--node', 'only webpack node config');
@@ -129,6 +130,47 @@ program
     builder.server(config, option);
   });
 
+program
+  .command('zip')
+  .option('--filename [filename]', 'archive zip file name')
+  .option('--source [path]', 'archive files root path')
+  .option('--target [path]', 'archive zip file path')
+  .option('--deps', 'install dependencies into node_modules')
+  .option('--mode [mode]', 'mode: npm, cnpm, tnpm, yarn and so on')
+  .option('--registry [registry]', 'dependence install registry url')
+  .option('--nodejs', 'install node into node_modules')
+  .option('--alinode', 'install alinode into node_modules')
+  .description('archive files to zip file')
+  .action(option => {
+    const config = utils.initArchiveOption(baseDir, program, option);
+    const archive = new Archive(config);
+    archive.zip();
+  });
+
+program
+  .command('tar')
+  .option('--filename [filename]', 'archive tar file name')
+  .option('--source [path]', 'archive files root path')
+  .option('--target [path]', 'archive zip file path')
+  .option('--deps', 'install dependencies into node_modules')
+  .option('--mode [mode]', 'mode: npm, cnpm, tnpm, yarn and so on')
+  .option('--registry [registry]', 'dependence install registry url')
+  .option('--node', 'install node into node_modules')
+  .option('--alinode', 'install alinode into node_modules')
+  .description('archive files to tar file')
+  .action(option => {
+    const config = utils.initArchiveOption(baseDir, program, option);
+    const archive = new Archive(config);
+    archive.tar();
+  });
+
+program
+  .command('deploy')
+  .description('upload file to deplay space')
+  .action(option => {
+    console.log('doing.....');
+  });  
+  
 program
   .command('clean [dir]')
   .description('webpack cache dir clean, if dir == "all", will clean cache dir and build dir')
