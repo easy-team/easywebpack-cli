@@ -1,3 +1,18 @@
+<a name="3.11.0"></a>
+# [3.11.0](https://github.com/hubcarl/easywebpack-cli/compare/3.9.2...3.11.0) (2018-03-27)
+
+
+### Bug Fixes
+
+* manifest not create ([905b89f](https://github.com/hubcarl/easywebpack-cli/commit/905b89f))
+
+
+### Features
+
+* archive zip or tar ([280f995](https://github.com/hubcarl/easywebpack-cli/commit/280f995))
+
+
+
 <a name="3.9.2"></a>
 ## [3.9.2](https://github.com/hubcarl/easywebpack-cli/compare/3.9.1...3.9.2) (2018-03-14)
 
