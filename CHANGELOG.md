@@ -1,3 +1,13 @@
+<a name="3.11.1"></a>
+## [3.11.1](https://github.com/hubcarl/easywebpack-cli/compare/3.11.0...3.11.1) (2018-03-30)
+
+
+### Bug Fixes
+
+* set devtool overrride default config ([6e32bb2](https://github.com/hubcarl/easywebpack-cli/commit/6e32bb2))
+
+
+
 <a name="3.11.0"></a>
 # [3.11.0](https://github.com/hubcarl/easywebpack-cli/compare/3.9.2...3.11.0) (2018-03-27)
 
