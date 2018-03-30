@@ -26,8 +26,8 @@ program
   .option('-s, --size [option]', 'webpack build size analyzer tool, support size: analyzer and stats, default analyzer')
   .option('--dll', 'only webpack dll config')
   .option('--web', 'only webpack web config')
-  .option('--node', 'only webpack node config');
-
+  .option('--node', 'only webpack node config')
+  .option('--devtool [devtool]', 'webpack devtool config');
 
 program
   .command('init')
