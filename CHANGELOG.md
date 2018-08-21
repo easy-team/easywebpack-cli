@@ -1,3 +1,13 @@
+<a name="3.11.2"></a>
+## [3.11.2](https://github.com/hubcarl/easywebpack-cli/compare/3.11.1...3.11.2) (2018-08-21)
+
+
+### Bug Fixes
+
+* dll cache info read error ([757d6d9](https://github.com/hubcarl/easywebpack-cli/commit/757d6d9))
+
+
+
 <a name="3.11.1"></a>
 ## [3.11.1](https://github.com/hubcarl/easywebpack-cli/compare/3.11.0...3.11.1) (2018-03-30)
 
