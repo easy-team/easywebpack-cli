@@ -1,3 +1,13 @@
+<a name="3.11.3"></a>
+## [3.11.3](https://github.com/hubcarl/easywebpack-cli/compare/3.11.2...3.11.3) (2018-09-05)
+
+
+### Bug Fixes
+
+* upgrade deps and change egg start ([df94b5c](https://github.com/hubcarl/easywebpack-cli/commit/df94b5c))
+
+
+
 <a name="3.11.2"></a>
 ## [3.11.2](https://github.com/hubcarl/easywebpack-cli/compare/3.11.1...3.11.2) (2018-08-21)
 
