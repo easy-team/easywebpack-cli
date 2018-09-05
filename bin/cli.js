@@ -55,9 +55,10 @@ program
 
 program
   .command('upgrade')
+  .option('--egg', 'use egg-bin and egg-scripts start application')
   .description('upgrade project package to latest version')
-  .action(() => {
-    require('../lib/upgrade')(baseDir);
+  .action(options => {
+    require('../lib/upgrade')(baseDir, options);
   });
 
 program
