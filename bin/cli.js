@@ -24,6 +24,7 @@ program
   .option('-c, --compress', 'webpack compress js/css/image')
   .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
   .option('-s, --size [option]', 'webpack build size analyzer tool, support size: analyzer and stats, default analyzer')
+  .option('--speed', 'webpack build speed')
   .option('--dll', 'only webpack dll config')
   .option('--web', 'only webpack web config')
   .option('--node', 'only webpack node config')
@@ -104,7 +105,7 @@ program
       env
     });
     const option = utils.initOption(program, {}, config);
-    builder.build(config, option);
+    builder.build(config, option, program.speed);
   });
 
 program
@@ -170,8 +171,8 @@ program
   .description('upload file to deplay space')
   .action(option => {
     console.log('doing.....');
-  });  
-  
+  });
+
 program
   .command('clean [dir]')
   .description('webpack cache dir clean, if dir == "all", will clean cache dir and build dir')
