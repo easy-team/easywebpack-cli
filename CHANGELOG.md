@@ -1,3 +1,69 @@
+<a name="3.11.3"></a>
+## [3.11.3](https://github.com/hubcarl/easywebpack-cli/compare/3.11.2...3.11.3) (2018-09-05)
+
+
+### Bug Fixes
+
+* upgrade deps and change egg start ([df94b5c](https://github.com/hubcarl/easywebpack-cli/commit/df94b5c))
+
+
+
+<a name="3.11.2"></a>
+## [3.11.2](https://github.com/hubcarl/easywebpack-cli/compare/3.11.1...3.11.2) (2018-08-21)
+
+
+### Bug Fixes
+
+* dll cache info read error ([757d6d9](https://github.com/hubcarl/easywebpack-cli/commit/757d6d9))
+
+
+
+<a name="3.11.1"></a>
+## [3.11.1](https://github.com/hubcarl/easywebpack-cli/compare/3.11.0...3.11.1) (2018-03-30)
+
+
+### Bug Fixes
+
+* set devtool overrride default config ([6e32bb2](https://github.com/hubcarl/easywebpack-cli/commit/6e32bb2))
+
+
+
+<a name="3.11.0"></a>
+# [3.11.0](https://github.com/hubcarl/easywebpack-cli/compare/3.9.2...3.11.0) (2018-03-27)
+
+
+### Bug Fixes
+
+* manifest not create ([905b89f](https://github.com/hubcarl/easywebpack-cli/commit/905b89f))
+
+
+### Features
+
+* archive zip or tar ([280f995](https://github.com/hubcarl/easywebpack-cli/commit/280f995))
+
+
+
+<a name="3.9.2"></a>
+## [3.9.2](https://github.com/hubcarl/easywebpack-cli/compare/3.9.1...3.9.2) (2018-03-14)
+
+
+### Bug Fixes
+
+* path ([12d5c2b](https://github.com/hubcarl/easywebpack-cli/commit/12d5c2b))
+* path and delete file ([dbd70eb](https://github.com/hubcarl/easywebpack-cli/commit/dbd70eb))
+
+
+
+<a name="3.9.1"></a>
+## [3.9.1](https://github.com/hubcarl/easywebpack-cli/compare/3.9.0...3.9.1) (2018-03-13)
+
+
+### Bug Fixes
+
+* fix: clean [dir] ([5eb7069](https://github.com/hubcarl/easywebpack-cli/commit/5eb7069))
+
+
+
 <a name="3.9.0"></a>
 # [3.9.0](https://github.com/hubcarl/easywebpack-cli/compare/3.8.0...3.9.0) (2018-03-13)
 

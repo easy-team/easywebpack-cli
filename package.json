@@ -1,7 +1,7 @@
 {
   "name": "easywebpack-cli",
   "version": "4.0.0-rc.1",
-  "description": "Webpack Building Command Line And Boilerplate Init Tool for easywebpack, Support Vue/React/Weex",
+  "description": "Webpack Building Command Line And Boilerplate Init Tool",
   "bin": {
     "easywebpack": "bin/cli.js",
     "easy": "bin/cli.js"
@@ -11,11 +11,12 @@
     "fix": "eslint --fix .",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "test-mocha": "mocha test --timeout 15000 --require co-mocha",
-    "test": "nyc --reporter=html --reporter=text mocha",
+    "test": "nyc --reporter=html --reporter=text npm run test-mocha",
     "cov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=d7567590-d31c-4c14-8707-574d8ab10c03",
     "ci": "npm run lint && npm run cov"
   },
   "dependencies": {
+    "archive-tool": "^1.0.0",
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
     "compressing": "^1.2.3",
@@ -27,7 +28,8 @@
     "node-http-server": "^8.1.2",
     "opn": "^5.1.0",
     "shelljs": "^0.7.8",
-    "urllib": "^2.24.0"
+    "urllib": "^2.24.0",
+    "speed-measure-webpack-plugin": "^1.2.2"
   },
   "devDependencies": {
     "chai": "^4.1.0",
@@ -45,11 +47,21 @@
     "lib",
     "tool"
   ],
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js",
+      "bin/cli.js",
+      "lib/builder.js",
+      "lib/command.js",
+      "index.js",
+      "test/*.test.js"
+    ]
+  },
   "engines": {
     "node": ">=6.0.0"
   },
   "ci": {
-    "version": "6, 7, 8, 9"
+    "version": "6, 8, 9"
   },
   "repository": {
     "type": "git",
