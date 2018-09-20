@@ -53,29 +53,36 @@ Usage: easy [command] [options]
   Options:
 
     -V, --version          output the version number
-    -f, --filename [path]  webpack config file name, default webpack.config.js
-    -w, --watch            webpack watch and hot-update
-    -m, --hash             webpack md5 hash js/css/image
-    -c, --compress         webpack compress js/css/image
-    -b, --build [option]   w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc
+    -f, --filename [path]  webpack config file path
+    -p, --port [port]      webpack server port
+    -s, --size [option]    webpack build size analyzer tool, support size: analyzer and stats, default analyzer
+    --dll                  only webpack dll config
+    --web                  only webpack web config
+    --node                 only webpack node config
+    --speed                stat webpack build speed
+    --devtool [devtool]    webpack devtool config
     -h, --help             output usage information
 
-
   Commands:
-  
+
     init [options]         init webpack config or boilerplate for Vue/React/Weex
-    install                npm install
-    print   [env] [options] print webpack config, support print by env or config node key
-    build   [env]           webpack building
-    server  [env]           webpack building and start server
-    clean   [env]           clean webpack cache
-    open    [dir]           open webpack cache dir
-    upgrade                 upgrade project easywebpack relation package to latest version
-    kill   [port]           kill port, such as 7001 or 7001,9000,9001
+    install [options]      dynamic install easywebpack missing npm module
+    upgrade [options]      upgrade project package to latest version
+    print [options] [env]  print webpack config, support print by env or config node key
+    dll [env]              webpack dll build
+    build [options] [env]  webpack building
+    server [options]       static file web http server
+    dev [env]              start webpack dev server for develoment mode
+    start [env]            start webpack dev server for develoment mode
+    zip [options]          archive files to zip file
+    tar [options]          archive files to tar file
+    deploy                 upload file to deplay space
+    clean [dir]            webpack cache dir clean, if dir == "all", will clean cache dir and build dir
+    open [dir]             open webpack cache dir
+    kill [port]            kill port process, default will kill 7001, 9000, 9001
 
 
-
-## 四. 命令介绍
+## 四. 常用命令介绍
 
 ### 4.1 配置模板和Boilerplate初始化
 
@@ -100,7 +107,9 @@ Usage: easy [command] [options]
 
 - easy build test
 
-- easy build prod
+- easy build prod 
+
+- easy build --server  编译后启动 HTTP 静态文件访问服务
 
 默认读取项目根目录下的 `webpack.config.js` 配置
 
@@ -168,7 +177,31 @@ easy build -s
 easy build -s stats
 ```
 
-### 4.9 打印配置
+### 4.9 构建速度分析
+
+使用插件 `speed-measure-webpack-plugin` 进行构建速度分析，统计各 loader 和 plugin 运行耗时
+
+```bash
+easy build --speed
+```
+
+### 4.10 启动本地静态 Web HTTP 服务
+
+使用插件 `node-http-server` 进行本地目录编译访问，自动寻找 HTML 文件
+
+- 默认当前目录
+
+```bash
+easy server
+```
+
+- 指定端口和目录
+
+```bash
+easy server -p 8888 -r dist
+```
+
+### 4.11 打印配置
 
 ```bash
 easy print -h
