@@ -23,9 +23,9 @@ program
   .option('-c, --compress', 'webpack compress js/css/image')
   .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
   .option('-s, --size [option]', 'ebpack build size analyzer tool, support size: analyzer and stats, default analyzer')
-  .option('--dll', 'only webpack dll config')
-  .option('--web', 'only webpack web config')
-  .option('--node', 'only webpack node config');
+  .option('--dll', 'webpack dll config')
+  .option('--web', 'webpack web config')
+  .option('--node', 'webpack node config');
 
 
 program
@@ -95,11 +95,13 @@ program
 
 program
   .command('build [env]')
+  .option('--devtool [devtool]', 'set webpack devtool')
   .description('webpack building')
-  .action(env => {
+  .action((env, cfg) => {
     const config = utils.initWebpackConfig(program, {
       baseDir,
-      env
+      env, 
+      cliDevtool: cfg.devtool
     });
     const option = utils.initOption(program, {}, config);
     builder.build(config, option);
