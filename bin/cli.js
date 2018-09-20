@@ -96,6 +96,7 @@ program
 program
   .command('build [env]')
   .option('--devtool [devtool]', 'set webpack devtool')
+  .option('--server [port]', 'start http server')
   .description('webpack building')
   .action((env, cfg) => {
     const config = utils.initWebpackConfig(program, {
@@ -103,6 +104,21 @@ program
       env, 
       cliDevtool: cfg.devtool
     });
+    // 编译完成, 启动 HTTP Server 访问静态页面
+    if (cfg.server) {
+      const done = config.done;
+      config.done = (multiCompiler, compilation) => {
+        done && done(multiCompiler, compilation);
+        const compiler = multiCompiler.compilers.find (item => {
+          return item.options.target === 'web';
+        });
+        if (compiler) { // 自动解析 output.path
+          const root = compiler.options.output.path;
+          const port = cfg.server === true ? undefined : cfg.server;
+          utils.startHttpServer({ root, port });
+        }
+      };
+    }
     const option = utils.initOption(program, {}, config);
     builder.build(config, option);
   });
@@ -119,7 +135,7 @@ program
 
 program
   .command('dev [env]')
-  .description('webpack building and start server')
+  .description('start webpack dev server for develoment mode')
   .action(env => {
     const config = utils.initWebpackConfig(program, {
       baseDir,
@@ -131,7 +147,7 @@ program
 
 program
   .command('start [env]')
-  .description('webpack building and start server')
+  .description('start webpack dev server for develoment mode')
   .action(env => {
     const config = utils.initWebpackConfig(program, {
       baseDir,

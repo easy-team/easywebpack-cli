@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-cli",
-  "version": "3.9.0",
+  "version": "4.0.0-rc.1",
   "description": "Webpack Building Command Line And Boilerplate Init Tool for easywebpack, Support Vue/React/Weex",
   "bin": {
     "easywebpack": "bin/cli.js",
