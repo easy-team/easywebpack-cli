@@ -108,7 +108,17 @@ program
   });
 
 program
-  .command('server [env]')
+  .command('server')
+  .option('-p, --port [port]', 'http server port')
+  .option('-r, --root [root]', 'http server file dir')
+  .option('-i, --index [index]', 'http server html index file name')
+  .description('static file web http server')
+  .action(options => {
+    utils.startHttpServer(options);
+  });
+
+program
+  .command('dev [env]')
   .description('webpack building and start server')
   .action(env => {
     const config = utils.initWebpackConfig(program, {

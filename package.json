@@ -23,6 +23,8 @@
     "kill-port": "^1.1.0",
     "lodash.get": "^4.4.2",
     "mz-modules": "^1.0.0",
+    "node-glob": "^1.2.0",
+    "node-http-server": "^8.1.2",
     "opn": "^5.1.0",
     "shelljs": "^0.7.8",
     "urllib": "^2.24.0"
