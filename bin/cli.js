@@ -73,14 +73,18 @@ program
     });
     const option = utils.initOption(program);
     const webpackConfig = builder.getWebpackConfig(config, option);
-    const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : [webpackConfig];
-    if (options.node) {
-      webpackConfigList.forEach(item => {
-        console.log(chalk.green(`easywebpack-cli: webpack ${program.type || item.target || ''} ${options.node} info:\r\n`), _(item, options.node));
-      });
+    const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : ( webpackConfig ? [webpackConfig] : []);
+    if (webpackConfigList.length) {
+      if (options.node) {
+        webpackConfigList.forEach(item => {
+          console.log(chalk.green(`easywebpack-cli: webpack ${program.type || item.target || ''} ${options.node} info:\r\n`), _(item, options.node));
+        });
+      } else {
+        console.log(chalk.green('easywebpack-cli: webpack config info:\r\n'), webpackConfig);
+      }
     } else {
-      console.log(chalk.green('easywebpack-cli: webpack config info:\r\n'), webpackConfig);
-    }
+      console.warn(chalk.yellow('easywebpack-cli: webpack config is empty'));
+    } 
   });
 
 program
