@@ -24,7 +24,6 @@ program
   .option('-c, --compress', 'webpack compress js/css/image')
   .option('-b, --build [option]', 'w(watch), m(hash) , c(compress), ex: wm/wc/mc/wmc')
   .option('-s, --size [option]', 'webpack build size analyzer tool, support size: analyzer and stats, default analyzer')
-  .option('--speed', 'stat webpack build speed')
   .option('--dll', 'only webpack dll config')
   .option('--web', 'only webpack web config')
   .option('--node', 'only webpack node config')
@@ -104,6 +103,7 @@ program
   .command('build [env]')
   .option('--devtool [devtool]', 'set webpack devtool')
   .option('--server [port]', 'start http server')
+  .option('--speed', 'stat webpack build speed')
   .description('webpack building')
   .action((env, cfg) => {
     const config = utils.initWebpackConfig(program, {
@@ -126,7 +126,7 @@ program
         }
       };
     }
-    const option = utils.initOption(program, {}, config);
+    const option = utils.initOption(program, cfg, config);
     builder.build(config, option);
   });
 
