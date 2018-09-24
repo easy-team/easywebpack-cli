@@ -21,16 +21,16 @@
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
     "compressing": "^1.2.3",
+    "cross-port-killer": "^1.0.1",
     "inquirer": "^3.2.1",
-    "kill-port": "^1.1.0",
     "lodash.get": "^4.4.2",
     "mz-modules": "^1.0.0",
     "node-glob": "^1.2.0",
     "node-http-server": "^8.1.2",
     "opn": "^5.1.0",
     "shelljs": "^0.7.8",
-    "urllib": "^2.24.0",
-    "speed-measure-webpack-plugin": "^1.2.2"
+    "speed-measure-webpack-plugin": "^1.2.2",
+    "urllib": "^2.24.0"
   },
   "devDependencies": {
     "chai": "^4.1.0",
