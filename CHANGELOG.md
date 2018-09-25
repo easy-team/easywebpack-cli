@@ -1,3 +1,26 @@
+<a name="4.0.0-rc.3"></a>
+# [4.0.0-rc.3](https://github.com/hubcarl/easywebpack-cli/compare/3.11.3...4.0.0-rc.3) (2018-09-25)
+
+
+### Bug Fixes
+
+* easy build --speed ([2abf1e2](https://github.com/hubcarl/easywebpack-cli/commit/2abf1e2))
+* windows delete file, the dir must be exists ([bd6ba36](https://github.com/hubcarl/easywebpack-cli/commit/bd6ba36))
+* windows easy open invalid' ([dde77d0](https://github.com/hubcarl/easywebpack-cli/commit/dde77d0))
+* windows kill port invalid' ([511caea](https://github.com/hubcarl/easywebpack-cli/commit/511caea))
+
+
+### Features
+
+* cli devtool support ([a0a56f5](https://github.com/hubcarl/easywebpack-cli/commit/a0a56f5))
+* support easy build --server command ([2694c44](https://github.com/hubcarl/easywebpack-cli/commit/2694c44))
+* support stat webpack cost time by easy build --speed ([20543d2](https://github.com/hubcarl/easywebpack-cli/commit/20543d2))
+* support web http server by easy server ([3481914](https://github.com/hubcarl/easywebpack-cli/commit/3481914))
+* add speed measure plugin stat build cost ([a1657ce](https://github.com/hubcarl/easywebpack-cli/commit/a1657ce))
+* zero config ([99d92eb](https://github.com/hubcarl/easywebpack-cli/commit/99d92eb))
+
+
+
 <a name="3.11.3"></a>
 ## [3.11.3](https://github.com/hubcarl/easywebpack-cli/compare/3.11.2...3.11.3) (2018-09-05)
 
