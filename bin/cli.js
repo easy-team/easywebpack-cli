@@ -2,7 +2,6 @@
 
 'use strict';
 const path = require('path');
-const fs = require('fs');
 const program = require('commander');
 const chalk = require('chalk');
 const Archive = require('archive-tool');
@@ -43,7 +42,6 @@ program
   .description('dynamic install easywebpack missing npm module')
   .action(options => {
     const config = utils.initWebpackConfig(program, {
-      baseDir,
       install: {
         check: true,
         npm: options.mode || 'npm'
@@ -66,10 +64,7 @@ program
   .option('-n, --node [key]', 'print webpack config info by config node key, example: [module/module.rules/plugins] and so on')
   .description('print webpack config, support print by env or config node key')
   .action((env, options) => {
-    const config = utils.initWebpackConfig(program, {
-      baseDir,
-      env
-    });
+    const config = utils.initWebpackConfig(program, { env });
     const option = utils.initOption(program);
     const webpackConfig = builder.getWebpackConfig(config, option);
     const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : ( webpackConfig ? [webpackConfig] : []);
@@ -90,11 +85,7 @@ program
   .command('dll [env]')
   .description('webpack dll build')
   .action(env => {
-    const config = utils.initWebpackConfig(program, {
-      baseDir,
-      env,
-      framework: 'dll'
-    });
+    const config = utils.initWebpackConfig(program, { env, framework: 'dll' });
     const option = utils.initOption(program, { onlyDll: true }, config);
     builder.build(config, option);
   });
@@ -106,11 +97,7 @@ program
   .option('--speed', 'stat webpack build speed')
   .description('webpack building')
   .action((env, cfg) => {
-    const config = utils.initWebpackConfig(program, {
-      baseDir,
-      env, 
-      cliDevtool: cfg.devtool
-    });
+    const config = utils.initWebpackConfig(program, { env, cliDevtool: cfg.devtool });
     // 编译完成, 启动 HTTP Server 访问静态页面
     if (cfg.server) {
       const done = config.done;
@@ -144,10 +131,7 @@ program
   .command('dev [env]')
   .description('start webpack dev server for develoment mode')
   .action(env => {
-    const config = utils.initWebpackConfig(program, {
-      baseDir,
-      env
-    });
+    const config = utils.initWebpackConfig(program, { env });
     const option = utils.initOption(program, {}, config);
     builder.server(config, option);
   });
@@ -156,10 +140,7 @@ program
   .command('start [env]')
   .description('start webpack dev server for develoment mode')
   .action(env => {
-    const config = utils.initWebpackConfig(program, {
-      baseDir,
-      env
-    });
+    const config = utils.initWebpackConfig(program, { env });
     const option = utils.initOption(program, {}, config);
     builder.server(config, option);
   });
