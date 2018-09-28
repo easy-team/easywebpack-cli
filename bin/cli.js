@@ -107,9 +107,9 @@ program
           return item.options.target === 'web';
         });
         if (compiler) { // 自动解析 output.path
-          const root = compiler.options.output.path;
+          const dist = compiler.options.output.path;
           const port = cfg.server === true ? undefined : cfg.server;
-          utils.startHttpServer({ root, port });
+          utils.startHttpServer({ dist, port });
         }
       };
     }
@@ -120,7 +120,7 @@ program
 program
   .command('server')
   .option('-p, --port [port]', 'http server port')
-  .option('-r, --root [root]', 'http server file dir')
+  .option('-d, --dist [dist]', 'http server file dir')
   .option('-i, --index [index]', 'http server html index file name')
   .description('static file web http server')
   .action(options => {
