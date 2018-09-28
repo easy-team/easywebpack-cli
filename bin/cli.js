@@ -6,7 +6,7 @@ const program = require('commander');
 const chalk = require('chalk');
 const Archive = require('archive-tool');
 const _ = require('lodash.get');
-const tool = require('../lib/tool');
+const tool = require('node-tool-utils');
 const utils = require('../lib/utils');
 const builder = require('../lib/builder');
 const command = require('../lib/command');
@@ -109,7 +109,7 @@ program
         if (compiler) { // 自动解析 output.path
           const dist = compiler.options.output.path;
           const port = cfg.server === true ? undefined : cfg.server;
-          utils.startHttpServer({ dist, port });
+          tool.httpServer({ dist, port });
         }
       };
     }
@@ -124,7 +124,7 @@ program
   .option('-i, --index [index]', 'http server html index file name')
   .description('static file web http server')
   .action(options => {
-    utils.startHttpServer(options);
+    tool.httpServer(options);
   });
 
 program
@@ -213,7 +213,7 @@ program
 // lsof -i tcp:7001 | grep LISTEN | awk \'{print $2}\' | xargs kill -9
 program
   .command('kill [port]')
-  .description('kill port process, default will kill 7001, 9000, 9001')
+  .description('kill port process')
   .action(port => {
     tool.kill(port || '7001,9000,9001');
   });
