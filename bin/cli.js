@@ -47,8 +47,7 @@ program
         npm: options.mode || 'npm'
       }
     });
-    const option = utils.initOption(program);
-    builder.getWebpackConfig(config, option);
+    builder.getWebpackConfig(config);
   });
 
 program
@@ -65,8 +64,7 @@ program
   .description('print webpack config, support print by env or config node key')
   .action((env, options) => {
     const config = utils.initWebpackConfig(program, { env });
-    const option = utils.initOption(program);
-    const webpackConfig = builder.getWebpackConfig(config, option);
+    const webpackConfig = builder.getWebpackConfig(config);
     const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : ( webpackConfig ? [webpackConfig] : []);
     if (webpackConfigList.length) {
       if (options.node) {
@@ -85,9 +83,8 @@ program
   .command('dll [env]')
   .description('webpack dll build')
   .action(env => {
-    const config = utils.initWebpackConfig(program, { env, framework: 'dll' });
-    const option = utils.initOption(program, { onlyDll: true }, config);
-    builder.build(config, option);
+    const config = utils.initWebpackConfig(program, { env, framework: 'dll' }, { dll: true });
+    builder.build(config);
   });
 
 program
@@ -97,7 +94,7 @@ program
   .option('--speed', 'stat webpack build speed')
   .description('webpack building')
   .action((env, cfg) => {
-    const config = utils.initWebpackConfig(program, { env, cliDevtool: cfg.devtool });
+    const config = utils.initWebpackConfig(program, { env, cliDevtool: cfg.devtool }, { speed: cfg.speed });
     // 编译完成, 启动 HTTP Server 访问静态页面
     if (cfg.server) {
       const done = config.done;
@@ -113,8 +110,7 @@ program
         }
       };
     }
-    const option = utils.initOption(program, cfg, config);
-    builder.build(config, option);
+    builder.build(config);
   });
 
 program
@@ -132,8 +128,7 @@ program
   .description('start webpack dev server for develoment mode')
   .action(env => {
     const config = utils.initWebpackConfig(program, { env });
-    const option = utils.initOption(program, {}, config);
-    builder.server(config, option);
+    builder.server(config);
   });
 
 program
@@ -141,8 +136,7 @@ program
   .description('start webpack dev server for develoment mode')
   .action(env => {
     const config = utils.initWebpackConfig(program, { env });
-    const option = utils.initOption(program, {}, config);
-    builder.server(config, option);
+    builder.server(config);
   });
 
 program

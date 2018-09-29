@@ -28,7 +28,9 @@
     "node-tool-utils": "^1.0.0",
     "shelljs": "^0.7.8",
     "speed-measure-webpack-plugin": "^1.2.2",
-    "urllib": "^2.24.0"
+    "stats-webpack-plugin": "^0.7.0",
+    "urllib": "^2.24.0",
+    "webpack-bundle-analyzer": "^3.0.2"
   },
   "devDependencies": {
     "chai": "^4.1.0",
