@@ -97,8 +97,8 @@ program
     const config = utils.initWebpackConfig(program, { env, cliDevtool: cfg.devtool }, { speed: cfg.speed });
     // 编译完成, 启动 HTTP Server 访问静态页面
     if (cfg.server) {
-      const done = config.done;
-      config.done = (multiCompiler, compilation) => {
+      const done = config.config.done;
+      config.config.done = (multiCompiler, compilation) => {
         done && done(multiCompiler, compilation);
         const compiler = multiCompiler.compilers.find (item => {
           return item.options.target === 'web';
