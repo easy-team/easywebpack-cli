@@ -26,7 +26,8 @@ program
   .option('--dll', 'only webpack dll config')
   .option('--web', 'only webpack web config')
   .option('--node', 'only webpack node config')
-  .option('--devtool [devtool]', 'webpack devtool config');
+  .option('--devtool [devtool]', 'webpack devtool config')
+  .option('--webpack', 'support native webpack dev and build');
 
 program
   .command('init')
@@ -93,10 +94,10 @@ program
   .option('--server [port]', 'start http server')
   .option('--speed', 'stat webpack build speed')
   .description('webpack building')
-  .action((env, cfg) => {
-    const config = utils.initWebpackConfig(program, { env, cliDevtool: cfg.devtool }, { speed: cfg.speed });
+  .action((env, options) => {
+    const config = utils.initWebpackConfig(program, { env, cliDevtool: options.devtool }, { speed: options.speed });
     // 编译完成, 启动 HTTP Server 访问静态页面
-    if (cfg.server) {
+    if (options.server) {
       const done = config.config.done;
       config.config.done = (multiCompiler, compilation) => {
         done && done(multiCompiler, compilation);
@@ -105,7 +106,7 @@ program
         });
         if (compiler) { // 自动解析 output.path
           const dist = compiler.options.output.path;
-          const port = cfg.server === true ? undefined : cfg.server;
+          const port = options.server === true ? undefined : options.server;
           tool.httpServer({ dist, port });
         }
       };

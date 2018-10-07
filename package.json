@@ -32,7 +32,8 @@
     "speed-measure-webpack-plugin": "^1.2.2",
     "stats-webpack-plugin": "^0.7.0",
     "urllib": "^2.24.0",
-    "webpack-bundle-analyzer": "^3.0.2"
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-tool": "next"
   },
   "devDependencies": {
     "chai": "^4.1.0",
