@@ -28,6 +28,7 @@
     "node-glob": "^1.2.0",
     "node-tool-utils": "^1.0.0",
     "ora": "^3.0.0",
+    "progress-bar-webpack-plugin": "^1.11.0",
     "shelljs": "^0.7.8",
     "speed-measure-webpack-plugin": "^1.2.2",
     "stats-webpack-plugin": "^0.7.0",
