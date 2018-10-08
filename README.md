@@ -41,7 +41,7 @@ $ npm i easywebpack-cli -g
 - ✔︎ Provide easywebpack and webapck development and build capabilities
 - ✔︎ Provide multiple types of project initialization, such as React, Vue, Egg projects
 - ✔︎ Provide multiple types of project builds, such as React, Vue, Egg, Weex projects
-- ✔︎ Provide webpack basic development and build capabilities, such as webpack dev server, hot-reload, typescript, pwa, dll
+- ✔︎ Provide webpack basic development and build capabilities, such as dev server, hot-reload, typescript, dll
 - ✔︎ Enhance Webpack-based development and build capabilities, such as build speed, build size capabilities
 - ✔︎ Provide [easywebpack](https://github.com/hubcarl/easywebpack) solution development and build capabilities
 - ✔︎ Built-in normal development commands, such easy clean, easy open, easy kill, easy server
@@ -57,10 +57,10 @@ $ npm i easywebpack-cli -g
 
 ## Command
 
-Support for easywebpack and webpack modes，default easywebpack mode, you can specify the wepback build mode by `--webpack`. Default read `${root}/webpack.config.js` webpack config file.
+Support easywebpack and webpack modes，default easywebpack mode, you can specify the wepback build mode by `--webpack`. Default read `${root}/webpack.config.js` webpack config file.
 
-- easywebpack mode: use easywebpack webpack config mode
-- Webpack mode: use native webpack config mode
+- easywebpack mode: use easywebpack webpack config
+- Webpack mode: use native webpack config
 
 ```bash
 easy -h

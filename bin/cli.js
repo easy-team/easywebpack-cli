@@ -61,16 +61,18 @@ program
 
 program
   .command('print [env]')
-  .option('-n, --node [key]', 'print webpack config info by config node key, example: [module/module.rules/plugins] and so on')
-  .description('print webpack config, support print by env or config node key')
+  .option('-n, --node [key]', 'print webpack config info by config key, example: [module/module.rules/plugins] and so on(Deprecated)')
+  .option('-k, --key [key]', 'print webpack config info by config key, example: [module/module.rules/plugins] and so on')
+  .description('print webpack config, support print by env or config key')
   .action((env, options) => {
     const config = utils.initWebpackConfig(program, { env });
     const webpackConfig = builder.getWebpackConfig(config);
     const webpackConfigList = Array.isArray(webpackConfig) ? webpackConfig : ( webpackConfig ? [webpackConfig] : []);
     if (webpackConfigList.length) {
-      if (options.node) {
+      const key = options.key || options.node;
+      if (key) {
         webpackConfigList.forEach(item => {
-          console.log(chalk.green(`easywebpack-cli: webpack ${program.type || item.target || ''} ${options.node} info:\r\n`), _(item, options.node));
+          console.log(chalk.green(`easywebpack-cli: webpack ${program.type || item.target || ''} ${key} info:\r\n`), _(item, key));
         });
       } else {
         console.log(chalk.green('easywebpack-cli: webpack config info:\r\n'), webpackConfig);
