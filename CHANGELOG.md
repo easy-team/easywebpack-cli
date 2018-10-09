@@ -1,10 +1,9 @@
-<a name="4.0.0-rc.3"></a>
-# [4.0.0-rc.3](https://github.com/hubcarl/easywebpack-cli/compare/3.11.3...4.0.0-rc.3) (2018-09-25)
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/hubcarl/easywebpack-cli/compare/4.0.0-rc.5...4.0.0) (2018-10-09)
 
 
 ### Bug Fixes
 
-* easy build --speed ([2abf1e2](https://github.com/hubcarl/easywebpack-cli/commit/2abf1e2))
 * windows delete file, the dir must be exists ([bd6ba36](https://github.com/hubcarl/easywebpack-cli/commit/bd6ba36))
 * windows easy open invalid' ([dde77d0](https://github.com/hubcarl/easywebpack-cli/commit/dde77d0))
 * windows kill port invalid' ([511caea](https://github.com/hubcarl/easywebpack-cli/commit/511caea))
@@ -18,6 +17,9 @@
 * support web http server by easy server ([3481914](https://github.com/hubcarl/easywebpack-cli/commit/3481914))
 * add speed measure plugin stat build cost ([a1657ce](https://github.com/hubcarl/easywebpack-cli/commit/a1657ce))
 * zero config ([99d92eb](https://github.com/hubcarl/easywebpack-cli/commit/99d92eb))
+* adjust easy print ([65ee8ec](https://github.com/hubcarl/easywebpack-cli/commit/65ee8ec))
+* auto set progress and size and speed plugin ([078b663](https://github.com/hubcarl/easywebpack-cli/commit/078b663))
+* support native webpack config by easy --webpack ([eb4bf24](https://github.com/hubcarl/easywebpack-cli/commit/eb4bf24))
 
 
 
