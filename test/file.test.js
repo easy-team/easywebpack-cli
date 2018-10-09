@@ -42,10 +42,6 @@ describe('file.test.js', () => {
       const install = require('../lib/install');
       expect(!!install).to.be.true;
     });
-    it('should builder file', () => {
-      const tool = require('../lib/tool');
-      expect(!!tool).to.be.true;
-    });
     it('should upgrade file', () => {
       const upgrade = require('../lib/upgrade');
       expect(!!upgrade).to.be.true;

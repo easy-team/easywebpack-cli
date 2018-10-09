@@ -4,7 +4,7 @@ const fs = require('fs');
 const rimraf = require('mz-modules/rimraf');
 const mkdirp = require('mz-modules/mkdirp');
 const expect = require('chai').expect;
-const tool = require('../lib/tool');
+const tool = require('node-tool-utils');
 const baseDir = process.cwd();
 // require('co-mocha');
 // http://chaijs.com/api/bdd/

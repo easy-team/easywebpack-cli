@@ -102,21 +102,20 @@ describe('utils.test.js', () => {
       program.hash = true;
       program.size = true;
       program.compress = true;
-      const option = utils.initWebpackConfig(program, {
+      const config = utils.initWebpackConfig(program, {
         baseDir: path.join(baseDir, 'test'),
         framework: 'js',
         env: 'test'
       });
+      const option = config.option;
       expect(option.framework).to.equal('js');
       expect(option.type).to.equal('client');
       expect(option.env).to.equal('test');
-      expect(option.port).to.equal(9000);
       expect(option.port).to.equal(9000);
       expect(option.miniJs).to.be.true;
       expect(option.miniCss).to.be.true;
       expect(option.miniImage).to.be.true;
       expect(option.hash).to.be.true;
-      expect(option.plugins.analyzer).to.be.true;
     });
   });
 });
