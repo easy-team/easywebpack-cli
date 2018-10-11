@@ -102,12 +102,12 @@ describe('utils.test.js', () => {
       program.hash = true;
       program.size = true;
       program.compress = true;
-      const config = utils.initWebpackConfig(program, {
+      const cfg = utils.initWebpackConfig(program, {
         baseDir: path.join(baseDir, 'test'),
         framework: 'js',
         env: 'test'
       });
-      const option = config.option;
+      const option = cfg.config;
       expect(option.framework).to.equal('js');
       expect(option.type).to.equal('client');
       expect(option.env).to.equal('test');

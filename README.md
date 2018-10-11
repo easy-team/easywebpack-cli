@@ -1,7 +1,7 @@
 # easywebpack-cli
 
 <div align="center">
-  <a href="https://www.yuque.com/hubcarl" target="_blank">
+  <a href="https://www.yuque.com/easy-team" target="_blank">
     <img width="200" height="200" src="/doc/easywebpack-logo.png">
   </a>
 </div>  
@@ -16,12 +16,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/easywebpack-cli.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/easywebpack-cli
-[travis-image]: https://img.shields.io/travis/hubcarl/easywebpack-cli.svg?style=flat-square
-[travis-url]: https://travis-ci.org/hubcarl/easywebpack-cli
-[codecov-image]: https://codecov.io/gh/hubcarl/easywebpack-cli/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/hubcarl/easywebpack-cli
-[david-image]: https://img.shields.io/david/hubcarl/easywebpack-cli.svg?style=flat-square
-[david-url]: https://david-dm.org/hubcarl/easywebpack-cli
+[travis-image]: https://img.shields.io/travis/easy-team/easywebpack-cli.svg?style=flat-square
+[travis-url]: https://travis-ci.org/easy-team/easywebpack-cli
+[codecov-image]: https://codecov.io/gh/easy-team/easywebpack-cli/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/easy-team/easywebpack-cli
+[david-image]: https://img.shields.io/david/easy-team/easywebpack-cli.svg?style=flat-square
+[david-url]: https://david-dm.org/easy-team/easywebpack-cli
 [download-image]: https://img.shields.io/npm/dm/easywebpack-cli.svg?style=flat-square
 [download-url]: https://npmjs.org/package/easywebpack-cli
 
@@ -43,17 +43,17 @@ $ npm i easywebpack-cli -g
 - ✔︎ Provide multiple types of project builds, such as React, Vue, Egg, Weex projects
 - ✔︎ Provide webpack basic development and build capabilities, such as dev server, hot-reload, typescript, dll
 - ✔︎ Enhance Webpack-based development and build capabilities, such as build speed, build size capabilities
-- ✔︎ Provide [easywebpack](https://github.com/hubcarl/easywebpack) solution development and build capabilities
+- ✔︎ Provide [easywebpack](https://github.com/easy-team/easywebpack) solution development and build capabilities
 - ✔︎ Built-in normal development commands, such easy clean, easy open, easy kill, easy server
 
 ## Documents
 
-- [Webpack Solution](https://github.com/hubcarl/easywebpack)
-- [Vue Single Application](https://github.com/hubcarl/easywebpack-vue)
-- [React Single Application](https://github.com/hubcarl/easywebpack-react)
-- [Vue Server Side Render](https://www.yuque.com/hubcarl/ves)
-- [React Server Side Render](https://www.yuque.com/hubcarl/res)
-- [Weex Application](https://github.com/hubcarl/easywebpack-weex)
+- [Webpack Solution](https://github.com/easy-team/easywebpack)
+- [Vue Single Application](https://github.com/easy-team/easywebpack-vue)
+- [React Single Application](https://github.com/easy-team/easywebpack-react)
+- [Vue Server Side Render](https://www.yuque.com/easy-team/ves)
+- [React Server Side Render](https://www.yuque.com/easy-team/res)
+- [Weex Application](https://github.com/easy-team/easywebpack-weex)
 
 ## Command
 
