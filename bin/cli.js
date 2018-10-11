@@ -96,7 +96,7 @@ program
   .option('--server [port]', 'start http server')
   .option('--speed', 'stat webpack build speed')
   .description('webpack building')
-  .action((env, options) => {
+  .action((env = 'prod', options) => {
     const config = utils.initWebpackConfig(program, { env, cliDevtool: options.devtool }, { speed: options.speed });
     // 编译完成, 启动 HTTP Server 访问静态页面
     if (options.server) {
