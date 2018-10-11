@@ -1,3 +1,13 @@
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/easy-team/easywebpack-cli/compare/4.0.0...4.0.1) (2018-10-11)
+
+
+### Bug Fixes
+
+* easy dev  env default value ([cc9a7c0](https://github.com/easy-team/easywebpack-cli/commit/cc9a7c0))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/hubcarl/easywebpack-cli/compare/4.0.0-rc.5...4.0.0) (2018-10-09)
 
