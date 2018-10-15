@@ -1,3 +1,14 @@
+<a name="4.0.2"></a>
+## [4.0.2](https://github.com/easy-team/easywebpack-cli/compare/4.0.1...4.0.2) (2018-10-15)
+
+
+### Bug Fixes
+
+* framework set ([7765b81](https://github.com/easy-team/easywebpack-cli/commit/7765b81))
+* merge config ([2e3654e](https://github.com/easy-team/easywebpack-cli/commit/2e3654e))
+
+
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/easy-team/easywebpack-cli/compare/4.0.0...4.0.1) (2018-10-11)
 
