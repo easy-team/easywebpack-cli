@@ -65,10 +65,10 @@
     "type": "git",
     "url": "git+https://github.com/hubcarl/easywebpack-cli.git"
   },
+  "publishConfig": { 
+    "tag": "3x" 
+  }, 
   "author": "hubcarl@126.com",
   "license": "MIT",
-  "homepage": "https://github.com/hubcarl/easywebpack-cli",
-  "__npminstall_done": "Thu Oct 18 2018 10:00:50 GMT+0800 (CST)",
-  "_from": "easywebpack-cli@3.12.0",
-  "_resolved": "http://registry.npm.alibaba-inc.com/easywebpack-cli/download/easywebpack-cli-3.12.0.tgz"
+  "homepage": "https://github.com/hubcarl/easywebpack-cli"
 }

@@ -1,3 +1,13 @@
+<a name="3.12.1"></a>
+## [3.12.1](https://github.com/hubcarl/easywebpack-cli/compare/3.11.3...3.12.1) (2018-10-18)
+
+
+### Bug Fixes
+
+* adapter cli4 ([20bcff2](https://github.com/hubcarl/easywebpack-cli/commit/20bcff2))
+
+
+
 <a name="3.11.3"></a>
 ## [3.11.3](https://github.com/hubcarl/easywebpack-cli/compare/3.11.2...3.11.3) (2018-09-05)
 
