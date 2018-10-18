@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-cli",
-  "version": "3.11.3",
+  "version": "3.12.1",
   "description": "Webpack Building Command Line And Boilerplate Init Tool for easywebpack, support Ve/React/Weex/Html/JS",
   "bin": {
     "easywebpack": "bin/cli.js",
@@ -26,7 +26,8 @@
     "mz-modules": "^1.0.0",
     "opn": "^5.1.0",
     "shelljs": "^0.7.8",
-    "urllib": "^2.24.0"
+    "urllib": "^2.24.0",
+    "speed-measure-webpack-plugin": "^1.2.2"
   },
   "devDependencies": {
     "chai": "^4.1.0",
@@ -66,5 +67,8 @@
   },
   "author": "hubcarl@126.com",
   "license": "MIT",
-  "homepage": "https://github.com/hubcarl/easywebpack-cli"
+  "homepage": "https://github.com/hubcarl/easywebpack-cli",
+  "__npminstall_done": "Thu Oct 18 2018 10:00:50 GMT+0800 (CST)",
+  "_from": "easywebpack-cli@3.12.0",
+  "_resolved": "http://registry.npm.alibaba-inc.com/easywebpack-cli/download/easywebpack-cli-3.12.0.tgz"
 }
