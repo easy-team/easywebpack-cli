@@ -1,3 +1,5 @@
 'use strict';
-const builder = require('./lib/builder');
-module.exports = builder;
+Object.assign(exports, require('./lib/builder'));
+exports.Command = require('./lib/command');
+exports.Download = require('./lib/Download');
+exports.WebpackTool = require('webpack-tool');
