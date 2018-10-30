@@ -1,3 +1,13 @@
+<a name="4.1.2"></a>
+## [4.1.2](https://github.com/easy-team/easywebpack-cli/compare/4.1.1...4.1.2) (2018-10-30)
+
+
+### Bug Fixes
+
+* easy upgrade command missing ([a48e3ac](https://github.com/easy-team/easywebpack-cli/commit/a48e3ac))
+
+
+
 <a name="4.0.2"></a>
 ## [4.0.2](https://github.com/easy-team/easywebpack-cli/compare/4.0.1...4.0.2) (2018-10-15)
 
