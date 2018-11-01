@@ -1,3 +1,14 @@
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/easy-team/easywebpack-cli/compare/4.1.2...4.3.0) (2018-11-01)
+
+
+### Features
+
+* add vue,react, egg antd app init ([45fe3c9](https://github.com/easy-team/easywebpack-cli/commit/45fe3c9))
+* easy init support sync template config ([022413e](https://github.com/easy-team/easywebpack-cli/commit/022413e))
+
+
+
 <a name="4.1.2"></a>
 ## [4.1.2](https://github.com/easy-team/easywebpack-cli/compare/4.1.1...4.1.2) (2018-10-30)
 
