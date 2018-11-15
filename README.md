@@ -192,7 +192,7 @@ easy server
 - serve specify port and directory
 
 ```bash
-easy server -p 8888 -r dist
+easy server -p 8888 -d dist
 ```
 
 ### Print Webpack Config Info
