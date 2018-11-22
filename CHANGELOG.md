@@ -1,3 +1,18 @@
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/easy-team/easywebpack-cli/compare/4.3.0...4.3.1) (2018-11-22)
+
+
+### Bug Fixes
+
+* cli devtool config missing ([11f0073](https://github.com/easy-team/easywebpack-cli/commit/11f0073))
+
+
+### Features
+
+* add element-admin example ([1efeb56](https://github.com/easy-team/easywebpack-cli/commit/1efeb56))
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/easy-team/easywebpack-cli/compare/4.1.2...4.3.0) (2018-11-01)
 
