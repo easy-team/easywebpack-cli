@@ -1,3 +1,13 @@
+<a name="4.3.2"></a>
+## [4.3.2](https://github.com/easy-team/easywebpack-cli/compare/4.3.1...4.3.2) (2018-11-26)
+
+
+### Bug Fixes
+
+* easy zip and easy tar ([c48bb21](https://github.com/easy-team/easywebpack-cli/commit/c48bb21))
+
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/easy-team/easywebpack-cli/compare/4.3.0...4.3.1) (2018-11-22)
 
