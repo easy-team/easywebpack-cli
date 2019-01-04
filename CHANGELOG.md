@@ -1,3 +1,13 @@
+<a name="4.3.3"></a>
+## [4.3.3](https://github.com/easy-team/easywebpack-cli/compare/4.3.2...4.3.3) (2019-01-04)
+
+
+### Bug Fixes
+
+* no dependencies and devDependencies key ([a1b8145](https://github.com/easy-team/easywebpack-cli/commit/a1b8145))
+
+
+
 <a name="4.3.2"></a>
 ## [4.3.2](https://github.com/easy-team/easywebpack-cli/compare/4.3.1...4.3.2) (2018-11-26)
 
