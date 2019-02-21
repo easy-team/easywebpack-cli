@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-cli",
-  "version": "4.3.3",
+  "version": "4.3.4",
   "description": "Webpack Building Command Line And Boilerplate Init Tool",
   "bin": {
     "easywebpack": "bin/cli.js",
