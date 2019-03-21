@@ -1,3 +1,8 @@
+<a name="4.3.5"></a>
+## [4.3.5](https://github.com/easy-team/easywebpack-cli/compare/4.3.4...4.3.5) (2019-03-21)
+
+
+
 <a name="4.3.3"></a>
 ## [4.3.3](https://github.com/easy-team/easywebpack-cli/compare/4.3.2...4.3.3) (2019-01-04)
 
