@@ -1,3 +1,13 @@
+<a name="4.3.6"></a>
+## [4.3.6](https://github.com/easy-team/easywebpack-cli/compare/4.3.5...4.3.6) (2019-07-18)
+
+
+### Bug Fixes
+
+* easy init .gitignore missing ([b75b85e](https://github.com/easy-team/easywebpack-cli/commit/b75b85e))
+
+
+
 <a name="4.3.5"></a>
 ## [4.3.5](https://github.com/easy-team/easywebpack-cli/compare/4.3.4...4.3.5) (2019-03-21)
 
