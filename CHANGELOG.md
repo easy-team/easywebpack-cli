@@ -1,3 +1,13 @@
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/easy-team/easywebpack-cli/compare/4.3.6...4.4.0) (2019-07-26)
+
+
+### Features
+
+* add React webpack-dev-server application ([3a9ea02](https://github.com/easy-team/easywebpack-cli/commit/3a9ea02))
+
+
+
 <a name="4.3.6"></a>
 ## [4.3.6](https://github.com/easy-team/easywebpack-cli/compare/4.3.5...4.3.6) (2019-07-18)
 
