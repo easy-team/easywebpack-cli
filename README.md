@@ -70,7 +70,7 @@ Usage: easy [command] [options]
 
   Options:
 
-    -V, --version          output the version number
+    -v, --version          output the version number
     -f, --filename [path]  webpack config file path
     -p, --port [port]      webpack server port
     -s, --size [option]    webpack build size analyzer tool, support size: analyzer and stats, default analyzer
@@ -95,6 +95,7 @@ Usage: easy [command] [options]
     zip [options]          archive files to zip file
     tar [options]          archive files to tar file
     deploy                 upload file to deplay space
+    upgrade                upgrade webpack and npm package
     clean [dir]            webpack cache dir clean, if dir == "all", will clean cache dir and build dir
     open [dir]             open webpack cache dir
     kill [port]            kill port process, default will kill 7001, 9000, 9001
@@ -137,6 +138,27 @@ Usage: easy [command] [options]
 #### webpack
 
 - easy build -f build/webpack.config.js --webpack
+
+
+### Upgrade
+
+- upgrade webpack3 to webpack4
+
+```bash
+easy upgrade
+```
+
+- upgrade egg project to webpack4
+
+```bash
+easy upgrade --egg
+```
+
+- upgrade babel 6 to babel 7
+
+```bash
+easy upgrade --babel
+```
 
 ### Clean Cache
 

@@ -1,3 +1,13 @@
+<a name="4.5.0"></a>
+# [4.5.0](https://github.com/easy-team/easywebpack-cli/compare/4.4.1...4.5.0) (2019-07-30)
+
+
+### Features
+
+* support babel 6 to babel 7 by easy upgrade --babel ([debf6c1](https://github.com/easy-team/easywebpack-cli/commit/debf6c1))
+
+
+
 <a name="4.4.1"></a>
 ## [4.4.1](https://github.com/easy-team/easywebpack-cli/compare/4.4.0...4.4.1) (2019-07-30)
 
