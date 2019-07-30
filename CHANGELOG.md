@@ -1,3 +1,19 @@
+<a name="4.4.1"></a>
+## [4.4.1](https://github.com/easy-team/easywebpack-cli/compare/4.4.0...4.4.1) (2019-07-30)
+
+
+### Bug Fixes
+
+* easy print zsh: no matches found erro ([e5537f9](https://github.com/easy-team/easywebpack-cli/commit/e5537f9))
+* init style choose and copy error ([f82c7d8](https://github.com/easy-team/easywebpack-cli/commit/f82c7d8))
+
+
+### Features
+
+* add react nunjucks template ([943b174](https://github.com/easy-team/easywebpack-cli/commit/943b174))
+
+
+
 <a name="4.4.0"></a>
 # [4.4.0](https://github.com/easy-team/easywebpack-cli/compare/4.3.6...4.4.0) (2019-07-26)
 
