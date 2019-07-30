@@ -1,6 +1,6 @@
 {
   "name": "easywebpack-cli",
-  "version": "4.4.1",
+  "version": "4.5.0",
   "description": "Webpack Building Command Line And Boilerplate Init Tool",
   "bin": {
     "easywebpack": "bin/cli.js",
@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "archive-tool": "^1.0.0",
+    "babel-upgrade": "^1.0.1",
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
     "compressing": "^1.2.3",
