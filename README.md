@@ -33,7 +33,7 @@ A Powerful Cross-platform Webpack CLI Tool
 ## Installation
 
 ```bash
-$ npm i easywebpack-cli -g
+$ npm i @easy-team/easywebpack-cli -g
 ```
 
 ## Features
