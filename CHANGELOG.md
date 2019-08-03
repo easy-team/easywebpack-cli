@@ -1,3 +1,13 @@
+<a name="4.5.1"></a>
+## [4.5.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.0...4.5.1) (2019-08-03)
+
+
+### Bug Fixes
+
+* compatible [@easy-team](https://github.com/easy-team)@easywebpack mode ([36c2b55](https://github.com/easy-team/easywebpack-cli/commit/36c2b55))
+
+
+
 <a name="4.5.0"></a>
 # [4.5.0](https://github.com/easy-team/easywebpack-cli/compare/4.4.1...4.5.0) (2019-07-30)
 
