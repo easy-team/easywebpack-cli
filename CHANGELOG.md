@@ -1,3 +1,13 @@
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.6.0) (2019-09-07)
+
+
+### Features
+
+* easy server show dir file and serve ([56ac5f9](https://github.com/easy-team/easywebpack-cli/commit/56ac5f9))
+
+
+
 <a name="4.5.1"></a>
 ## [4.5.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.0...4.5.1) (2019-08-03)
 
