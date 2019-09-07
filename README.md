@@ -181,6 +181,10 @@ easy kill 7001,9000,9001
 
 ### Webpack Build Size
 
+![easy-build-s](/doc/easy-build-s-cmd.png)
+
+> https://www.yuque.com/easy-team/easywebpack/pdwchd
+
 - webpack-bundle-analyzer
 
 ```bash
@@ -204,6 +208,8 @@ easy build --speed
 ### Start Web HTTP Server
 
 Use the plugin `node-http-server` for local directory compilation access, automatically find HTML files
+
+![easy server](/doc/easy-server-cmd.png)
 
 - serve current dir
 
