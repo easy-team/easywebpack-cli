@@ -1,3 +1,13 @@
+<a name="4.1.0-beta.1"></a>
+# [4.1.0-beta.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.1.0-beta.1) (2019-09-30)
+
+
+### Features
+
+* support show customize cli name ([15eb273](https://github.com/easy-team/easywebpack-cli/commit/15eb273))
+
+
+
 <a name="4.5.1"></a>
 ## [4.5.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.0...4.5.1) (2019-08-03)
 
