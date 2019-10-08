@@ -92,6 +92,7 @@ Usage: easy [command] [options]
     server [options]       static file web http server
     dev [env]              start webpack dev server for develoment mode
     start [env]            start webpack dev server for develoment mode
+    doc                    open github or document page
     zip [options]          archive files to zip file
     tar [options]          archive files to tar file
     deploy                 upload file to deplay space
