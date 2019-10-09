@@ -1,3 +1,23 @@
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.1.1) (2019-10-09)
+
+
+### Bug Fixes
+
+* can not get framework config ([3ce90d4](https://github.com/easy-team/easywebpack-cli/commit/3ce90d4))
+* customize config override ([8cc2fa3](https://github.com/easy-team/easywebpack-cli/commit/8cc2fa3))
+* run command env default value ([00cadb8](https://github.com/easy-team/easywebpack-cli/commit/00cadb8))
+
+
+### Features
+
+* add doc command ([1f648ff](https://github.com/easy-team/easywebpack-cli/commit/1f648ff))
+* add easy doc pages ([095c733](https://github.com/easy-team/easywebpack-cli/commit/095c733))
+* adjust easy init text ([7758f2b](https://github.com/easy-team/easywebpack-cli/commit/7758f2b))
+* support show customize cli name ([15eb273](https://github.com/easy-team/easywebpack-cli/commit/15eb273))
+
+
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.1.0) (2019-10-08)
 
