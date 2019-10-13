@@ -30,11 +30,16 @@
 A Powerful Cross-platform Webpack CLI Tool
 
 
-## Installation
+## Install
 
 ```bash
 $ npm i @easy-team/easywebpack-cli -g
 ```
+
+## Version
+
+- @easy-team/easywebpack-cli -> @easy-team/easywebpack (Babel 7)
+- easywebpack-cli -> easywebpack (Babel 6)
 
 ## Features
 

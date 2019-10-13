@@ -33,6 +33,9 @@ easywebpack cli 命令行工具 for [easywebpack](https://github.com/hubcarl/eas
 
 ## 二. 安装
 
+- @easy-team/easywebpack-cli -> @easy-team/easywebpack (Babel 7)
+- easywebpack-cli -> easywebpack (Babel 6)
+
 ```bash
 $ npm i easywebpack-cli -g
 ```
