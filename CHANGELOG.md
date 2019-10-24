@@ -1,3 +1,18 @@
+<a name="4.6.1"></a>
+## [4.6.1](https://github.com/easy-team/easywebpack-cli/compare/4.6.0...4.6.1) (2019-10-24)
+
+
+### Features
+
+* add command easy print --ip  print ip ([9d93b40](https://github.com/easy-team/easywebpack-cli/commit/9d93b40))
+
+
+### Performance Improvements
+
+* adjust easy init description ([a0088ef](https://github.com/easy-team/easywebpack-cli/commit/a0088ef))
+
+
+
 <a name="4.6.0"></a>
 # [4.6.0](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.6.0) (2019-09-07)
 
