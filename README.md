@@ -258,6 +258,13 @@ easy print -h
 
 - easy print -k resolve
 
+
+## Extend Webpack CLI 
+
+- [res-cli](https://github.com/easy-team/res-cli) Res Node Web Framework Command CLI
+
+- [ves-cli](https://github.com/easy-team/res-cli) Ves Node Web Framework Command CLI
+
 ## License
 
 [MIT](LICENSE)
