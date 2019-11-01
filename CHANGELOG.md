@@ -1,3 +1,18 @@
+<a name="4.2.1"></a>
+## [4.2.1](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.2.1) (2019-11-01)
+
+
+### Bug Fixes
+
+* easy zip filename set invalid ([50ed7eb](https://github.com/easy-team/easywebpack-cli/commit/50ed7eb))
+
+
+### Performance Improvements
+
+* support register cmd for array ([2a910cc](https://github.com/easy-team/easywebpack-cli/commit/2a910cc))
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.2.0) (2019-10-25)
 
