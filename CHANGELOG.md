@@ -1,3 +1,13 @@
+<a name="4.6.2"></a>
+## [4.6.2](https://github.com/easy-team/easywebpack-cli/compare/4.6.1...4.6.2) (2019-11-01)
+
+
+### Bug Fixes
+
+* https://github.com/easy-team/easywebpack/issues/66 ([9f2d2ef](https://github.com/easy-team/easywebpack-cli/commit/9f2d2ef))
+
+
+
 <a name="4.6.1"></a>
 ## [4.6.1](https://github.com/easy-team/easywebpack-cli/compare/4.6.0...4.6.1) (2019-10-24)
 
