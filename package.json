@@ -14,7 +14,8 @@
     "test": "nyc --reporter=html --reporter=text npm run test-mocha",
     "cov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=d7567590-d31c-4c14-8707-574d8ab10c03",
     "ci": "npm run lint && npm run cov",
-    "ii": "npm install --registry https://registry.npm.taobao.org"
+    "ii": "npm install --registry https://registry.npm.taobao.org",
+    "postinstall": "node ./lib/postinstall.js"
   },
   "dependencies": {
     "archive-tool": "^1.0.0",
