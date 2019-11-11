@@ -1,3 +1,17 @@
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/easy-team/easywebpack-cli/commit/2c6536b0855464ab71f59dcdcfdd7915ffc5c79c) (2019-11-11)
+
+
+### Bug Fixes
+
+* select npm install for easy init ([f818364](https://github.com/easy-team/easywebpack-cli/commit/f818364))
+
+
+### Features
+
+* support update easy init config by postinstall ([2c6536b](https://github.com/easy-team/easywebpack-cli/commit/2c6536b))
+
+
 <a name="4.2.1"></a>
 ## [4.2.1](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.2.1) (2019-11-01)
 
