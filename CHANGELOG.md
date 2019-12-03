@@ -1,3 +1,25 @@
+<a name="4.3.1"></a>
+## [4.3.1](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.3.1) (2019-12-03)
+
+
+### Bug Fixes
+
+* easy print env default undefined string error ([dcd8230](https://github.com/easy-team/easywebpack-cli/commit/dcd8230))
+* easy zip filename set invalid ([50ed7eb](https://github.com/easy-team/easywebpack-cli/commit/50ed7eb))
+* select npm install for easy init ([f818364](https://github.com/easy-team/easywebpack-cli/commit/f818364))
+
+
+### Features
+
+* support update easy init config by postinstall ([2c6536b](https://github.com/easy-team/easywebpack-cli/commit/2c6536b))
+
+
+### Performance Improvements
+
+* support register cmd for array ([2a910cc](https://github.com/easy-team/easywebpack-cli/commit/2a910cc))
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/easy-team/easywebpack-cli/commit/2c6536b0855464ab71f59dcdcfdd7915ffc5c79c) (2019-11-11)
 
