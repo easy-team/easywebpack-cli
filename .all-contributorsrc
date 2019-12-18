@@ -1,0 +1,64 @@
+{
+  "projectName": "easywebpack-cli",
+  "projectOwner": "hubcarl",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "hubcarl",
+      "name": "sky",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4983042?v=4",
+      "profile": "https://easyjs.cn",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "jasonjcpeng",
+      "name": "jasonjcpeng",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13363216?v=4",
+      "profile": "https://github.com/jasonjcpeng",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "willworks",
+      "name": "Kevin Zhong",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5542777?v=4",
+      "profile": "https://github.com/willworks",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "HiuYanChong",
+      "name": "HiuYanChong",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/15319816?v=4",
+      "profile": "https://github.com/HiuYanChong",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "mice33",
+      "name": "Mice",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4945433?v=4",
+      "profile": "https://github.com/mice33",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
