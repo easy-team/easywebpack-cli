@@ -1,3 +1,13 @@
+<a name="4.6.3"></a>
+## [4.6.3](https://github.com/easy-team/easywebpack-cli/compare/4.6.2...4.6.3) (2019-12-30)
+
+
+### Bug Fixes
+
+* windows inquirer can not select https://github.com/easy-team/easywebpack-cli/issues/16 ([2257ee7](https://github.com/easy-team/easywebpack-cli/commit/2257ee7))
+
+
+
 <a name="4.6.2"></a>
 ## [4.6.2](https://github.com/easy-team/easywebpack-cli/compare/4.6.1...4.6.2) (2019-11-01)
 
