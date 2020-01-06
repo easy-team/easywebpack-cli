@@ -166,6 +166,12 @@ easy upgrade --egg
 easy upgrade --babel
 ```
 
+### Puppeteer Html Prerender
+
+```bash
+easy puppeteer --url http://49.233.172.37:7001/csr
+```
+
 ### Clean Cache
 
 ```bash

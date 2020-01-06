@@ -1,6 +1,6 @@
 {
   "name": "@easy-team/easywebpack-cli",
-  "version": "4.3.2",
+  "version": "4.4.0",
   "description": "Webpack Building Command Line And Boilerplate Init Tool",
   "bin": {
     "easywebpack": "bin/cli.js",
@@ -23,8 +23,10 @@
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
     "compressing": "^1.2.3",
+    "easy-puppeteer-html": "^1.0.0",
     "execa": "^1.0.0",
     "inquirer": "^7.0.1",
+    "jsdom": "^15.2.1",
     "lodash.get": "^4.4.2",
     "mz-modules": "^1.0.0",
     "node-glob": "^1.2.0",
