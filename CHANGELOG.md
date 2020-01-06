@@ -1,3 +1,13 @@
+<a name="4.7.0"></a>
+# [4.7.0](https://github.com/easy-team/easywebpack-cli/compare/4.6.3...4.7.0) (2020-01-06)
+
+
+### Features
+
+* add puppeteer html render ([d00ad27](https://github.com/easy-team/easywebpack-cli/commit/d00ad27))
+
+
+
 <a name="4.6.3"></a>
 ## [4.6.3](https://github.com/easy-team/easywebpack-cli/compare/4.6.2...4.6.3) (2019-12-30)
 
