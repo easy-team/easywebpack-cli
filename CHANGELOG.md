@@ -1,3 +1,13 @@
+<a name="4.7.1"></a>
+## [4.7.1](https://github.com/easy-team/easywebpack-cli/compare/4.7.0...4.7.1) (2020-01-10)
+
+
+### Bug Fixes
+
+* case sensitive ([dca7010](https://github.com/easy-team/easywebpack-cli/commit/dca7010))
+
+
+
 <a name="4.7.0"></a>
 # [4.7.0](https://github.com/easy-team/easywebpack-cli/compare/4.6.3...4.7.0) (2020-01-06)
 
