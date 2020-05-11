@@ -1,3 +1,13 @@
+<a name="4.7.2"></a>
+## [4.7.2](https://github.com/easy-team/easywebpack-cli/compare/4.7.1...4.7.2) (2020-05-11)
+
+
+### Bug Fixes
+
+* the port is used ([b6b3fb5](https://github.com/easy-team/easywebpack-cli/commit/b6b3fb5))
+
+
+
 <a name="4.7.1"></a>
 ## [4.7.1](https://github.com/easy-team/easywebpack-cli/compare/4.7.0...4.7.1) (2020-01-10)
 
