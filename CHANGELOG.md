@@ -1,3 +1,19 @@
+<a name="4.8.0"></a>
+# [4.8.0](https://github.com/easy-team/easywebpack-cli/compare/4.7.0...4.8.0) (2020-05-17)
+
+
+### Bug Fixes
+
+* case sensitive ([dca7010](https://github.com/easy-team/easywebpack-cli/commit/dca7010))
+* the port is used ([b6b3fb5](https://github.com/easy-team/easywebpack-cli/commit/b6b3fb5))
+
+
+### Features
+
+* add easy init new template ([533f521](https://github.com/easy-team/easywebpack-cli/commit/533f521))
+
+
+
 <a name="4.7.2"></a>
 ## [4.7.2](https://github.com/easy-team/easywebpack-cli/compare/4.7.1...4.7.2) (2020-05-11)
 
