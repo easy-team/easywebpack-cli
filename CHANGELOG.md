@@ -1,3 +1,18 @@
+<a name="4.4.3"></a>
+## [4.4.3](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.4.3) (2020-05-31)
+
+### Features
+
+* add build common lib template ([f9a1982](https://github.com/easy-team/easywebpack-cli/commit/f9a1982))
+* support update easy init config by postinstall ([2c6536b](https://github.com/easy-team/easywebpack-cli/commit/2c6536b))
+
+
+### Performance Improvements
+
+* support register cmd for array ([2a910cc](https://github.com/easy-team/easywebpack-cli/commit/2a910cc))
+
+
+
 <a name="4.3.1"></a>
 ## [4.3.1](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.3.1) (2019-12-03)
 
