@@ -30,16 +30,14 @@
 A Powerful Cross-platform Webpack CLI Tool
 
 
-## Install
+## Installation
+
+- @easy-team/easywebpack-cli -> @easy-team/easywebpack (Babel 7)
+- easywebpack-cli -> easywebpack (Babel 6)
 
 ```bash
 $ npm i @easy-team/easywebpack-cli -g
 ```
-
-## Version
-
-- @easy-team/easywebpack-cli -> @easy-team/easywebpack (Babel 7)
-- easywebpack-cli -> easywebpack (Babel 6)
 
 ## Features
 
@@ -97,7 +95,6 @@ Usage: easy [command] [options]
     server [options]       static file web http server
     dev [env]              start webpack dev server for develoment mode
     start [env]            start webpack dev server for develoment mode
-    doc                    open github or document page
     zip [options]          archive files to zip file
     tar [options]          archive files to tar file
     deploy                 upload file to deplay space
@@ -193,6 +190,10 @@ easy kill 7001,9000,9001
 
 ### Webpack Build Size
 
+![easy-build-s](/doc/easy-build-s-cmd.png)
+
+> https://www.yuque.com/easy-team/easywebpack/pdwchd
+
 - webpack-bundle-analyzer
 
 ```bash
@@ -216,6 +217,8 @@ easy build --speed
 ### Start Web HTTP Server
 
 Use the plugin `node-http-server` for local directory compilation access, automatically find HTML files
+
+![easy server](/doc/easy-server-cmd.png)
 
 - serve current dir
 
@@ -260,6 +263,38 @@ easy print -h
 - easy print -k output
 
 - easy print -k resolve
+
+
+## Extend Webpack CLI 
+
+- [res-cli](https://github.com/easy-team/res-cli) Res Node Web Framework Command CLI
+
+- [ves-cli](https://github.com/easy-team/res-cli) Ves Node Web Framework Command CLI
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://easyjs.cn"><img src="https://avatars2.githubusercontent.com/u/4983042?v=4" width="100px;" alt=""/><br /><sub><b>sky</b></sub></a><br /><a href="https://github.com/hubcarl/easywebpack-cli/commits?author=hubcarl" title="Code">💻</a> <a href="https://github.com/hubcarl/easywebpack-cli/commits?author=hubcarl" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/jasonjcpeng"><img src="https://avatars0.githubusercontent.com/u/13363216?v=4" width="100px;" alt=""/><br /><sub><b>jasonjcpeng</b></sub></a><br /><a href="https://github.com/hubcarl/easywebpack-cli/commits?author=jasonjcpeng" title="Code">💻</a> <a href="https://github.com/hubcarl/easywebpack-cli/commits?author=jasonjcpeng" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/willworks"><img src="https://avatars2.githubusercontent.com/u/5542777?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Zhong</b></sub></a><br /><a href="https://github.com/hubcarl/easywebpack-cli/commits?author=willworks" title="Code">💻</a> <a href="https://github.com/hubcarl/easywebpack-cli/commits?author=willworks" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/HiuYanChong"><img src="https://avatars0.githubusercontent.com/u/15319816?v=4" width="100px;" alt=""/><br /><sub><b>HiuYanChong</b></sub></a><br /><a href="https://github.com/hubcarl/easywebpack-cli/commits?author=HiuYanChong" title="Code">💻</a> <a href="https://github.com/hubcarl/easywebpack-cli/commits?author=HiuYanChong" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/mice33"><img src="https://avatars2.githubusercontent.com/u/4945433?v=4" width="100px;" alt=""/><br /><sub><b>Mice</b></sub></a><br /><a href="https://github.com/hubcarl/easywebpack-cli/commits?author=mice33" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.hacke2.cn"><img src="https://avatars1.githubusercontent.com/u/6399899?v=4" width="100px;" alt=""/><br /><sub><b>hacke2</b></sub></a><br /><a href="https://github.com/hubcarl/easywebpack-cli/commits?author=hacke2" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
 
 ## License
 

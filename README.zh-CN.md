@@ -37,7 +37,7 @@ easywebpack cli 命令行工具 for [easywebpack](https://github.com/hubcarl/eas
 - easywebpack-cli -> easywebpack (Babel 6)
 
 ```bash
-$ npm i easywebpack-cli -g
+$ npm i @easy-team/easywebpack-cli -g
 ```
 
 按照成功后, 可以在命令行使用全局命令 `easywebpack` or `easy`
