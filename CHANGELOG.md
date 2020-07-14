@@ -1,8 +1,9 @@
-<a name="4.5.0"></a>
-## [4.5.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.0...4.5.1) (2020-05-31)
+<a name="4.5.2"></a>
+## [4.5.2](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.5.2) (2020-05-31)
 
 ### Bug Fixes
 
+* copy hide file mode error ([eb3f546](https://github.com/easy-team/easywebpack-cli/commit/eb3f546))
 * extends cli mode top option and command option conflict ([8fb711e](https://github.com/easy-team/easywebpack-cli/commit/8fb711e))
 
 
