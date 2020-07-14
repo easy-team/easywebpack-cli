@@ -1,3 +1,11 @@
+<a name="4.5.0"></a>
+## [4.5.0](https://github.com/easy-team/easywebpack-cli/compare/4.4.3...4.5.0) (2020-05-31)
+
+### Features
+
+* implement easy add command ([16456d8](https://github.com/easy-team/easywebpack-cli/commit/16456d8))
+
+
 <a name="4.4.3"></a>
 ## [4.4.3](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.4.3) (2020-05-31)
 
