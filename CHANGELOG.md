@@ -1,4 +1,12 @@
 <a name="4.5.0"></a>
+## [4.5.0](https://github.com/easy-team/easywebpack-cli/compare/4.5.0...4.5.1) (2020-05-31)
+
+### Bug Fixes
+
+* extends cli mode top option and command option conflict ([8fb711e](https://github.com/easy-team/easywebpack-cli/commit/8fb711e))
+
+
+<a name="4.5.0"></a>
 ## [4.5.0](https://github.com/easy-team/easywebpack-cli/compare/4.4.3...4.5.0) (2020-05-31)
 
 ### Features
