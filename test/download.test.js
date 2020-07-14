@@ -12,7 +12,7 @@ const Download = require('../lib/download');
 describe('download.test.js', () => {
   let download;
   before(() => {
-    download = new Download();
+    download = new Download({}, { name: 'easywbpack-cli' });
   });
 
   after(() => {
@@ -53,7 +53,7 @@ describe('download.test.js', () => {
       download.copy(sourceDir, targetDir, { hide: true });
       download.updatePackageFile(targetDir);
       expect(fs.existsSync(path.join(targetDir, 'app/router.js'))).to.be.true;
-      expect(fs.existsSync(path.join(targetDir, '.babelrc'))).to.be.true;
+      expect(fs.existsSync(path.join(targetDir, 'babel.config.js'))).to.be.true;
     });
   });
 });

@@ -34,7 +34,6 @@ describe('utils.test.js', () => {
     });
 
     it('should utils getInstallPackage test', () => {
-      expect(utils.getInstallPackage('nocommander')).to.be.null;
       expect(utils.getInstallPackage('commander').name).to.be.string;
     });
 
