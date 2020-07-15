@@ -116,6 +116,34 @@ Usage: easy [command] [options]
 
 ![step two](/doc/easy-init-step-two.png)
 
+### Add Component/Config
+
+![easy add](/doc/easy-add.png)
+
+##### 从列表中选择指定模板
+
+```bash
+easy add 
+```
+
+##### 从列表中选择 React 相关模板
+
+```bash
+easy add --template react
+```
+
+##### 直接初始化模板
+
+```bash
+easy add --template react-component
+```
+
+##### 自定义模板路径/文件名
+
+```bash
+easy add --template react-component --dist src/components --output Test.jsx
+```
+
 ### Project Development
 
 #### easywebpack 
