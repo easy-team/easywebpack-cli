@@ -1,3 +1,13 @@
+<a name="4.8.1"></a>
+## [4.8.1](https://github.com/easy-team/easywebpack-cli/compare/4.8.0...4.8.1) (2020-09-05)
+
+
+### Bug Fixes
+
+* https://github.com/easy-team/easywebpack-cli/issues/26 ([ae066a7](https://github.com/easy-team/easywebpack-cli/commit/ae066a7))
+
+
+
 <a name="4.8.0"></a>
 # [4.8.0](https://github.com/easy-team/easywebpack-cli/compare/4.7.0...4.8.0) (2020-05-17)
 
