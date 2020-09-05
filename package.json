@@ -72,6 +72,9 @@
   "ci": {
     "version": "8, 10, 12, 14"
   },
+  "publishConfig": {
+    "tag": "5x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/easy-team/easywebpack-cli.git"
