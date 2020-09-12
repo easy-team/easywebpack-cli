@@ -25,18 +25,26 @@
 [download-image]: https://img.shields.io/npm/dm/easywebpack-cli.svg?style=flat-square
 [download-url]: https://npmjs.org/package/easywebpack-cli
 
-
-
 A Powerful Cross-platform Webpack CLI Tool
-
 
 ## Installation
 
-- @easy-team/easywebpack-cli -> @easy-team/easywebpack (Babel 7)
-- easywebpack-cli -> easywebpack (Babel 6)
+- easywebpack-cli@5 -> easywebpack@5 (>=Node 8 + Babel 7)
 
 ```bash
-$ npm i @easy-team/easywebpack-cli -g
+npm i easywebpack-cli@4 -g
+```
+
+- @easy-team/easywebpack-cli@4 -> @easy-team/easywebpack@4 (>=Node 6 + Babel 7)
+
+```bash
+npm i @easy-team/easywebpack-cli -g
+```
+
+- easywebpack-cli@4 -> easywebpack@4 (>=Node 6 + Babel 6)
+
+```bash
+npm i easywebpack-cli -g
 ```
 
 ## Features
@@ -120,25 +128,25 @@ Usage: easy [command] [options]
 
 ![easy add](/doc/easy-add.png)
 
-##### 从列表中选择指定模板
+#### 从列表中选择指定模板
 
 ```bash
 easy add 
 ```
 
-##### 从列表中选择 React 相关模板
+#### 从列表中选择 React 相关模板
 
 ```bash
 easy add --template react
 ```
 
-##### 直接初始化模板
+#### 直接初始化模板
 
 ```bash
 easy add --template react-component
 ```
 
-##### 自定义模板路径/文件名
+#### 自定义模板路径/文件名
 
 ```bash
 easy add --template react-component --dist src/components --output Test.jsx
@@ -146,7 +154,7 @@ easy add --template react-component --dist src/components --output Test.jsx
 
 ### Project Development
 
-#### easywebpack 
+#### easywebpack
 
 - easy dev
 
@@ -169,7 +177,6 @@ easy add --template react-component --dist src/components --output Test.jsx
 #### webpack
 
 - easy build -f build/webpack.config.js --webpack
-
 
 ### Upgrade
 
