@@ -26,30 +26,31 @@ describe('download.test.js', () => {
 
   describe('#npm download cli test', () => {
     const projectDir = path.join(process.cwd(), 'dist/cli');
-    it('should init cli config test', function *() {
-      download.init(projectDir, { pkgName: 'easywebpack-cli-template' });
+    it('should init cli config test', async () => {
+      await download.init(projectDir, { pkgName: 'easywebpack-cli-template' });
     });
 
-    it('should init egg-react-webpack-boilerplate test', function *() {
-      download.init(projectDir, { pkgName : 'egg-react-webpack-boilerplate'} );
+    it('should init egg-react-webpack-boilerplate test', async () => {
+      await download.init(projectDir, { pkgName : 'egg-react-webpack-boilerplate'} );
     });
   });
 
   describe('#npm download vue boilerplate test', () => {
-
     const vueBoilerplate = 'egg-vue-webpack-boilerplate';
-    it('should getPackageInfo', function *() {
-      const pkgInfo = yield download.getPackageInfo(vueBoilerplate);
-      console.log('pkgInfo.dist.tarball', pkgInfo.dist.tarball);
+    it('should getPackageInfo', async () => {
+      const pkgInfo = await download.getPackageInfo(vueBoilerplate);
       expect(pkgInfo.dist.tarball).include(vueBoilerplate);
     });
+  });
 
-    it('should download and copy', function *() {
-      const downloadDir = yield download.download(vueBoilerplate, '');
+  describe('#npm download vue boilerplate and copy test', () => {
+    it('should download and copy', async () => {
+      const vueBoilerplate = 'egg-vue-webpack-boilerplate';
+      const downloadDir = await download.download(vueBoilerplate, '');
       const sourceDir = downloadDir;
       const targetDir = path.join(process.cwd(), `dist/${vueBoilerplate}`);
-      yield rimraf(targetDir);
-      yield mkdirp(targetDir);
+      await rimraf(targetDir);
+      await mkdirp(targetDir);
       download.copy(sourceDir, targetDir, { hide: true });
       download.updatePackageFile(targetDir);
       expect(fs.existsSync(path.join(targetDir, 'app/router.js'))).to.be.true;
