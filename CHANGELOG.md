@@ -1,14 +1,9 @@
-# [5.0.0-beta.2](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...5.0.0-beta.2) (2020-09-12)
+# [5.0.0](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...5.0.0) (2020-10-16)
 
 ### Features
 
-* upgrade less and sass deps ([da0b90e](https://github.com/easy-team/easywebpack-cli/commit/da0b90e3fe4aca9ea4133195f8d9e188a5b9b2b2))
-* add build common lib template ([f9a1982](https://github.com/easy-team/easywebpack-cli/commit/f9a198225c05dd5cd16fc66f7bac6b63ead937fd))
-* add react simple template ([44bf27b](https://github.com/easy-team/easywebpack-cli/commit/44bf27b23e24feb13cb57fa61589894d0856d208))
-* add react simple template ([bc16228](https://github.com/easy-team/easywebpack-cli/commit/bc16228623127e9be610a5aadb22e0c170f70f82))
-* implement easy add command ([16456d8](https://github.com/easy-team/easywebpack-cli/commit/16456d8dc44c809635af33cc3e690c15ce093c57))
-* support easy print --ip command ([e3950ba](https://github.com/easy-team/easywebpack-cli/commit/e3950ba2746cea64bfa9520ed832c018bb49418a))
-
+* [BREAK_CHANGE] webpack 5([c4e0d73](https://github.com/easy-team/easywebpack-cli/commit/c4e0d730ccd9d46d8fddb1804a770bd1310ab259))
+* upgrade less and sass deps([da0b90e](https://github.com/easy-team/easywebpack-cli/commit/da0b90e3fe4aca9ea4133195f8d9e188a5b9b2b2))
 
 ## [4.5.1](https://github.com/easy-team/easywebpack-cli/compare/4.5.0...4.5.1) (2019-08-03)
 
