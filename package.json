@@ -15,6 +15,7 @@
     "cov": "nyc report --reporter=lcov > coverage.lcov && codecov --token=d7567590-d31c-4c14-8707-574d8ab10c03",
     "ci": "npm run lint && npm run cov",
     "ii": "npm install --registry https://registry.npmjs.org",
+    "pub": "npm publish --registry https://registry.npmjs.org",
     "postinstall": "node ./lib/postinstall.js"
   },
   "dependencies": {

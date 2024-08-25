@@ -66,6 +66,40 @@
 
 
 
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/easy-team/easywebpack-cli/compare/4.2.0...4.6.0) (2024-08-25)
+
+
+### Bug Fixes
+
+* case sensitive ([5eebf15](https://github.com/easy-team/easywebpack-cli/commit/5eebf15))
+* copy hide file mode ([eb3f546](https://github.com/easy-team/easywebpack-cli/commit/eb3f546))
+* easy print env default undefined string error ([dcd8230](https://github.com/easy-team/easywebpack-cli/commit/dcd8230))
+* easy zip filename set invalid ([50ed7eb](https://github.com/easy-team/easywebpack-cli/commit/50ed7eb))
+* extends cli mode top option and command option conflict ([76ef3f2](https://github.com/easy-team/easywebpack-cli/commit/76ef3f2))
+* select npm install for easy init ([f818364](https://github.com/easy-team/easywebpack-cli/commit/f818364))
+* the port is used ([b86541c](https://github.com/easy-team/easywebpack-cli/commit/b86541c))
+
+
+### Features
+
+* add build common lib template ([f9a1982](https://github.com/easy-team/easywebpack-cli/commit/f9a1982))
+* add easy init demo ([9fb2009](https://github.com/easy-team/easywebpack-cli/commit/9fb2009))
+* add react simple template ([44bf27b](https://github.com/easy-team/easywebpack-cli/commit/44bf27b))
+* add react simple template ([bc16228](https://github.com/easy-team/easywebpack-cli/commit/bc16228))
+* implement easy add command ([8a5cced](https://github.com/easy-team/easywebpack-cli/commit/8a5cced))
+* implement easy add command ([16456d8](https://github.com/easy-team/easywebpack-cli/commit/16456d8))
+* support easy print --ip command ([d916325](https://github.com/easy-team/easywebpack-cli/commit/d916325))
+* support easy print --ip command ([e3950ba](https://github.com/easy-team/easywebpack-cli/commit/e3950ba))
+* support update easy init config by postinstall ([2c6536b](https://github.com/easy-team/easywebpack-cli/commit/2c6536b))
+
+
+### Performance Improvements
+
+* support register cmd for array ([2a910cc](https://github.com/easy-team/easywebpack-cli/commit/2a910cc))
+
+
+
 <a name="4.5.2"></a>
 ## [4.5.2](https://github.com/easy-team/easywebpack-cli/compare/4.5.1...4.5.2) (2020-05-31)
 
