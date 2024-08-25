@@ -76,6 +76,10 @@
     "type": "git",
     "url": "git+https://github.com/easy-team/easywebpack-cli.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "author": "hubcarl@126.com",
   "license": "MIT",
   "homepage": "https://github.com/easy-team/easywebpack-cli"
